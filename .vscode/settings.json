@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/remoteExperimentServer.jar",
+        "lib/weka-src.jar",
+        "lib/weka.jar"
+    ]
+}
