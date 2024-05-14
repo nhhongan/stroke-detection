@@ -10,9 +10,6 @@ import weka.core.Instance;
 public class Smote implements Pre_process_interface {
     private String distance_metric = "Euclidean";
 
-    // public boolean chooseSex = false;
-    // private int sexColumn = -1;
-
     public Smote(HashMap<String, Integer> sampling_strategy, int K, String distance_metric, Random rand) {
         this.config(sampling_strategy, K, distance_metric, rand);
     }
@@ -36,7 +33,6 @@ public class Smote implements Pre_process_interface {
             }
             classInstances.get(classValue).add(instance);
         }
-        // sexColumn = data.attribute("gender").index();
         Instances balancedData = new Instances(data);
 
         for (String classValue : classInstances.keySet()) {
@@ -58,16 +54,6 @@ public class Smote implements Pre_process_interface {
             }
         }
         return balancedData;
-    }
-
-    private int countClassZero(Instances data) {
-        int count = 0;
-        for (int i = 0; i < data.numInstances(); i++) {
-            if (data.instance(i).stringValue(0).equals("0")) {
-                count++;
-            }
-        }
-        return count;
     }
 
     public Instance generateSyntheticInstance(Instance instance, ArrayList<Instance> neighbors, Random rand) {
@@ -112,9 +98,6 @@ public class Smote implements Pre_process_interface {
             double distance = calculateDistance(targetInstance, instance);
             DenseInstance temp = new DenseInstance(instance);
             temp.setWeight(distance);
-            // if (chooseSex && (instance.attribute(this.sexColumn) != targetInstance.attribute(this.sexColumn))) {
-            //     continue;
-            // }
             kNearestInstances.add(temp);
         }
         kNearestInstances.sort(Comparator.comparingDouble(Instance::weight));

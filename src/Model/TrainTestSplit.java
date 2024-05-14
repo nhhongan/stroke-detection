@@ -1,7 +1,5 @@
 package Model;
 
-import weka.core.Copyable;
-import weka.core.Instance;
 import weka.core.Instances;
 import java.util.Random;
 

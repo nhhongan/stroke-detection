@@ -5,12 +5,9 @@ import weka.core.Instances;
 import weka.core.Attribute;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
-import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 import weka.core.converters.ArffLoader;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
@@ -153,53 +150,5 @@ public class DataProcess {
             }
         }
         System.out.println(_count);
-    }
-    
-
-    public static void main(String[] args) throws Exception {
-          
-        // String filePath = "dataset/healthcare-dataset-stroke-data.csv"; 
-    
-        // Instances data = DataProcess.readData(filePath);
-
-        // String inputFilePath = "dataset/healthcare-dataset-stroke-data.arff"; 
-        // String outputFilePath = "dataset/healthcare-dataset-stroke-non_missing_data.arff";
-
-
-        // data = convertStringToNumericAndHandleMissingValues(data, "bmi");
-        // Save the modified ARFF file
-        // ArffSaver saver = new ArffSaver();
-        // saver.setInstances(data);
-        // saver.setFile(new File(outputFilePath));
-        // saver.writeBatch();
-        // System.out.println("Non-missing ARFF file saved: " + outputFilePath);
-
-        String inputFilePath = "dataset/healthcare-dataset-stroke-non_missing_data.arff";
-        String outputFilePath = "dataset/healthcare-dataset-stroke-smote_data.arff";
-        Instances data = DataProcess.readData(inputFilePath);
-        // System.out.println(data);
-        System.out.println("Number of instances: " + data.numInstances());
-        System.out.println("Number of attributes: " + data.numAttributes());
-
-        HashMap<String, Integer> params = new HashMap<>();
-        params.put("0", 4861); // Assuming "0" represents the majority class
-        params.put("1", 4857);
-        int K = 5;
-        String distanceMetric = "Euclidean";
-        Random rand = new Random();
-
-        // Apply SMOTE
-        Smote smote = new Smote(params, K, distanceMetric, rand);
-        Instances balancedData = smote.apply(data);
-        System.out.println("\nAfter SMOTE:");
-        System.out.println(balancedData);
-        System.out.println("Number of instances after SMOTE: " + balancedData.numInstances());
-        System.out.println("Number of attributes: " + balancedData.numAttributes());
-        ArffSaver saver = new ArffSaver();
-        saver.setInstances(balancedData);
-        saver.setFile(new File(outputFilePath));
-        saver.writeBatch();
-        System.out.println("Smote ARFF file saved: " + outputFilePath);
-    }
-      
+    } 
 }

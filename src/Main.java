@@ -2,6 +2,7 @@
 import Data_processing.DataProcess;
 import Data_processing.Smote;
 import Model.*;
+import Evaluation.Evaluate;
 import Evaluation.KCrossVal;
 
 import weka.classifiers.AbstractClassifier;
@@ -92,8 +93,10 @@ public class Main {
         for (int i = 0; i < models.size(); i++) {
             WekaModel model = models.get(i);
             System.out.println("Training data using " + model.modelName());
+            // Evaluate evaluate = new Evaluate(model, balancedTrain, test);
+            // evaluate.execute();
             KCrossVal kCrossVal = new KCrossVal(model, balancedTrain, 10);
-            kCrossVal.k_folds_validation();
+            kCrossVal.execute();
             System.out.println("---------------------------------");
         }
     }
