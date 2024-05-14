@@ -24,11 +24,15 @@ public class KCrossVal {
             Evaluation eval = new Evaluation(data);
             Instances train = data.trainCV(folds, i);
             Instances test = data.testCV(folds, i);
-            model.buildClassifier(train);
+            this.model.buildClassifier(train);
             eval.evaluateModel(model.classifier, test);
             this.avg_f1 += eval.fMeasure(1);
         }
         this.avg_f1 = this.avg_f1/folds;
         System.out.println("Average F1 score: " + avg_f1);
+    }
+
+    public void saveModel(String filePath) throws Exception {
+        weka.core.SerializationHelper.write(filePath, this.model);
     }
 }

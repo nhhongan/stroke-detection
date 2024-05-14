@@ -1,11 +1,13 @@
 package Model;
 
+import java.io.Serializable;
+
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Classifier;
 import weka.core.Instance;
 import weka.core.Instances;
 
-public class WekaModel implements ModelBase {
+public class WekaModel implements ModelBase, Serializable {
     public Classifier classifier;
 
     public WekaModel(Classifier classifier) {

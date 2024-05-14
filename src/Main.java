@@ -2,8 +2,7 @@
 import Data_processing.DataProcess;
 import Data_processing.Smote;
 import Model.*;
-import Evaluation.Evaluate;
-import Evaluation.KCrossVal;
+import Evaluation.*;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Classifier;
@@ -19,6 +18,7 @@ import weka.classifiers.trees.J48;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
 
 public class Main {
@@ -97,7 +97,24 @@ public class Main {
             // evaluate.execute();
             KCrossVal kCrossVal = new KCrossVal(model, balancedTrain, 10);
             kCrossVal.execute();
+            String filePath = model.modelName() + ".model";
+            kCrossVal.saveModel(filePath);
             System.out.println("---------------------------------");
         }
+
+
+        // Test models with test dataset
+        // ArrayList<String> model_names = new ArrayList<>(List.of("RandomForest", "NaiveBayes", "J48"));
+        // for (int i = 0; i < model_names.size(); i++){
+        //     String filePath = model_names.get(i) + ".model";
+        //     WekaModel model = (WekaModel) weka.core.SerializationHelper.read(filePath);
+        //     System.out.println("Testing data using " + model.modelName());
+        //     Random rand = new Random(1);
+        //     int randomNumber = rand.nextInt(test.numInstances() - 1 + 1) + 1;
+        //     double actualValue = test.instance(randomNumber).classValue();
+        //     Instance inst = test.instance(randomNumber);
+        //     double pred = model.classifyInstance(inst);
+        //     System.out.println("Actual value: " + actualValue + " --- Predicted value: " + pred);
+        // }
     }
 }
