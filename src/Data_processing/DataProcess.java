@@ -15,6 +15,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+import static java.lang.Math.max;
+
+
 public class DataProcess {
     public DataProcess(){}
     
@@ -113,6 +116,30 @@ public class DataProcess {
         Random rand = new Random();
         Smote smote = new Smote(sampling_strategy, K, distance_metric, rand);
         return smote.apply(data);
+    }
+
+    public static Instances normalize(Instances data) {
+        for (int i = 0 ; i < data.numAttributes() ; i++) {
+            if (data.classIndex() == i) {
+                continue;
+            }
+            if (data.attribute(i).isNumeric()) {
+                double mx = 0.0, mn = 1e9;
+
+                for (int j = 0 ; j < data.numInstances() ; j++) {
+                    mx = max(mx, data.instance(j).value(i));
+                    mn = max(mn, data.instance(j).value(i));
+                }
+
+                for (int j = 0 ; j < data.numInstances() ; j++) {
+                    double val = data.instance(j).value(i);
+                    data.instance(j).setValue(i, val / mx);
+//                    data.instance(j).setValue(i, (val - mn/ (mx - mn)));
+                }
+            }
+        }
+
+        return data;
     }
     
 

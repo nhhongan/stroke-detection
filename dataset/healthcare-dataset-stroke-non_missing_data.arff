@@ -11,7 +11,7 @@
 @attribute avg_glucose_level numeric
 @attribute bmi numeric
 @attribute smoking_status {'formerly smoked','never smoked',smokes,Unknown}
-@attribute stroke {1, 0}
+@attribute stroke {0, 1}
 
 @data
 9046,Male,67,0,1,Yes,Private,Urban,228.69,36.6,'formerly smoked',1
