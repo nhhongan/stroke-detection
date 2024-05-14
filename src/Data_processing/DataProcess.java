@@ -141,6 +141,19 @@ public class DataProcess {
 
         return data;
     }
+
+    public static void analyze_data(Instances data) {
+        HashMap<String, Integer> _count = new HashMap<>();
+        for (Instance instance:data) {
+            String label = instance.stringValue(data.classIndex());
+            if (_count.containsKey(label)) {
+                _count.put(label, _count.get(label) + 1);
+            } else {
+                _count.put(label, 1);
+            }
+        }
+        System.out.println(_count);
+    }
     
 
     public static void main(String[] args) throws Exception {

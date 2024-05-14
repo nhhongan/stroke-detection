@@ -2,7 +2,7 @@
 import Data_processing.DataProcess;
 import Data_processing.Smote;
 import Model.*;
-// import Utils.Evaluator;
+import Evaluation.KCrossVal;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Classifier;
@@ -12,11 +12,8 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.classifiers.trees.RandomTree;
-import weka.classifiers.functions.Logistic;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.trees.J48;
-import weka.classifiers.functions.SMO;
-import weka.classifiers.functions.MultilayerPerceptron;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -27,10 +24,6 @@ public class Main {
     public static void main(String[] args) {
         try {
             Instances data = DataProcess.readData("dataset/healthcare-dataset-stroke-non_missing_data.arff");
-            // System.out.println(data.firstInstance());
-            // for (int i = 0; i < data.numAttributes(); i++)
-            // System.out.println(i + " " + data.attribute(i).name());
-
             data.setClassIndex(11);
             data = DataProcess.normalize(data);
 
@@ -38,7 +31,6 @@ public class Main {
 
         } catch (Exception e) {
             e.printStackTrace();
-            // Handle the exception appropriately
         }
     }
 
@@ -46,10 +38,10 @@ public class Main {
         double train_size = 0.7;
         Random random = new Random(507);
         TrainTestSplit trainTestSplit = new TrainTestSplit(data, train_size, random);
-        // String outputFilePath = "healthcare-dataset-stroke-smote_train_data.arff";
+        // String outputFilePath = "healthcare-dataset-stroke-smote_randomize_train_data.arff";
         Instances train = trainTestSplit.train;
-        System.out.println(train.numInstances());
         Instances test = trainTestSplit.test;
+        System.out.println(train.numInstances());
 
         // Count each class in training data
         double class0Count = train.attributeStats(11).nominalCounts[0]; 
@@ -80,14 +72,14 @@ public class Main {
         System.out.println("Number of instances for class 0: " + class0Smote);
         System.out.println("Number of instances for class 1: " + class1Smote);
 
+        balancedTrain.randomize(random);
+
         RandomForest randomForest = new RandomForest();
-        RandomTree randomTree = new RandomTree();
         NaiveBayes naiveBayes = new NaiveBayes();
         J48 j48 = new J48();
 
         ArrayList<Classifier> classifiers = new ArrayList<>();
         classifiers.add(randomForest);
-        classifiers.add(randomTree);
         classifiers.add(naiveBayes);
         classifiers.add(j48);
 
@@ -97,28 +89,12 @@ public class Main {
             models.add(model);
         }
 
-        // for (int i = 0; i < classifiers.size(); i++) {
-        //     WekaModel model = models.get(i);
-        //     Random random = new Random(507);
-
-        //     HashMap<String, Integer> params = new HashMap<>();
-        //     params.put("0", 4861); // Assuming "0" represents the majority class
-        //     params.put("1", 4857);
-        //     int K = 5;
-        //     String distanceMetric = "Euclidean";
-        //     Random rand = new Random();
-
-        //     ArffSaver saver = new ArffSaver();
-        //     saver.setInstances(balancedData);
-        //     saver.setFile(new File(outputFilePath));
-        //     saver.writeBatch();
-        //     System.out.println("Smote ARFF file saved: " + outputFilePath);
-
-        //     TrainModel trainModel = new TrainModel(model, train, test, random);
-        //     double[] predictions = trainModel.makePredictions();
-        //     double accuracy = trainModel.calculateAccuracy(predictions);
-        //     System.out.println("Accuracy of " + classifiers.get(i).getClass().getSimpleName() + ": " + accuracy);
-        // }
-
+        for (int i = 0; i < models.size(); i++) {
+            WekaModel model = models.get(i);
+            System.out.println("Training data using " + model.modelName());
+            KCrossVal kCrossVal = new KCrossVal(model, balancedTrain, 10);
+            kCrossVal.k_folds_validation();
+            System.out.println("---------------------------------");
+        }
     }
 }
