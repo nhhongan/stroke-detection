@@ -20,6 +20,7 @@ public class Evaluate {
         Evaluation eval = new Evaluation(train);
         eval.evaluateModel(model.classifier, test);
         System.out.println(eval.toSummaryString("Evaluation results:\n", false));
+        System.out.println(eval.toClassDetailsString("=== Detailed Accuracy By Class ===\n"));
         System.out.println(eval.toMatrixString("===Overall Confusion Matrix===\n"));
     }
 }

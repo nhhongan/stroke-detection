@@ -97,8 +97,8 @@ public class Main {
         for (int i = 0; i < models.size(); i++) {
             WekaModel model = models.get(i);
             System.out.println("Training data using " + model.modelName());
-            // Evaluate evaluate = new Evaluate(model, balancedTrain, test);
-            // evaluate.execute();
+             Evaluate evaluate = new Evaluate(model, balancedTrain, test);
+             evaluate.execute();
             KCrossVal kCrossVal = new KCrossVal(model, balancedTrain, 10);
             kCrossVal.execute();
             String filePath = model.modelName() + ".model";
@@ -111,7 +111,8 @@ public class Main {
         apriori.buildAssociations(Pre_process_apriori.preprocess(balancedTrain));
         System.out.println(apriori);
         System.out.println("---------------------------------");
-
+        EvaluateApriori evaluateApriori = new EvaluateApriori(Pre_process_apriori.preprocess(balancedTrain));
+        evaluateApriori.execute();
 
 
         // Test models with test dataset
