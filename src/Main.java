@@ -1,9 +1,11 @@
 
 import Data_processing.DataProcess;
+import Data_processing.Pre_process_apriori;
 import Data_processing.Smote;
 import Model.*;
 import Evaluation.*;
-
+import Data_processing.Pre_process_apriori;
+import weka.associations.AssociationRule;
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.RandomForest;
@@ -14,6 +16,7 @@ import weka.core.converters.ArffSaver;
 import weka.classifiers.trees.RandomTree;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.trees.J48;
+import weka.associations.Apriori;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -78,6 +81,7 @@ public class Main {
         RandomForest randomForest = new RandomForest();
         NaiveBayes naiveBayes = new NaiveBayes();
         J48 j48 = new J48();
+        Apriori apriori = new Apriori();
 
         ArrayList<Classifier> classifiers = new ArrayList<>();
         classifiers.add(randomForest);
@@ -101,6 +105,13 @@ public class Main {
             kCrossVal.saveModel(filePath);
             System.out.println("---------------------------------");
         }
+
+        apriori.setLowerBoundMinSupport(0.1);
+        apriori.setMinMetric(0.5);
+        apriori.buildAssociations(Pre_process_apriori.preprocess(balancedTrain));
+        System.out.println(apriori);
+        System.out.println("---------------------------------");
+
 
 
         // Test models with test dataset
