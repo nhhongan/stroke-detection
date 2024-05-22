@@ -5,6 +5,7 @@
     "java.project.referencedLibraries": [
         "lib/remoteExperimentServer.jar",
         "lib/weka-src.jar",
-        "lib/weka.jar"
+        "lib/weka.jar",
+        "lib/libsvm.jar"
     ]
 }

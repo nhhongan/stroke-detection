@@ -151,4 +151,20 @@ public class DataProcess {
         }
         System.out.println(_count);
     } 
+    public static Instances combineDatasets(Instances dataset1, Instances dataset2) {
+        // Check if datasets are compatible
+        if (!dataset1.equalHeaders(dataset2)) {
+            throw new IllegalArgumentException("Datasets have different headers and cannot be combined.");
+        }
+
+        // Create a new Instances object to hold the combined data
+        Instances combinedDataset = new Instances(dataset1);
+
+        // Add all instances from the second dataset to the combined dataset
+        for (int i = 0; i < dataset2.numInstances(); i++) {
+            combinedDataset.add(dataset2.instance(i));
+        }
+
+        return combinedDataset;
+    }
 }
