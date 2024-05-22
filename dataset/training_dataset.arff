@@ -1,0 +1,816 @@
+@relation healthcare-dataset-stroke-data-weka.filters.unsupervised.instance.Resample-S1-Z12.55794971-no-replacement-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-Clast-L2
+
+@attribute id numeric
+@attribute gender {Male,Female,Other}
+@attribute age numeric
+@attribute hypertension {1,0}
+@attribute heart_disease {1,0}
+@attribute ever_married {Yes,No}
+@attribute work_type {Private,Self-employed,Govt_job,children,Never_worked}
+@attribute Residence_type {Urban,Rural}
+@attribute avg_glucose_level numeric
+@attribute bmi numeric
+@attribute smoking_status {'formerly smoked','never smoked',smokes,Unknown}
+@attribute stroke {0,1}
+
+@data
+0.78193,Female,0.45122,0,0,No,Private,Rural,0.458306,0.320697,'never smoked',0
+0.920138,Female,0.968046,0,1,Yes,Self-employed,Rural,0.267212,0.250573,'formerly smoked',1
+0.905659,Male,0.729275,0,1,Yes,Private,Urban,0.710287,0.345287,Unknown,1
+0.48363,Female,0.073171,0,0,No,children,Rural,0.309487,0.202869,Unknown,0
+0.745613,Male,0.54878,0,0,Yes,Private,Rural,0.236034,0.30123,'never smoked',1
+0.659693,Female,1,0,0,Yes,Self-employed,Urban,0.417495,0.310451,'never smoked',0
+0.45909,Female,0.97561,0,0,Yes,Govt_job,Urban,0.407227,0.345287,Unknown,1
+0.605868,Female,0.134146,0,0,No,children,Urban,0.47895,0.17623,Unknown,0
+0.732145,Male,0.873173,1,1,No,Govt_job,Rural,0.788424,0.364348,'never smoked',1
+0.96833,Female,0.865854,0,0,Yes,Govt_job,Rural,0.713697,0.229508,smokes,1
+0.356841,Male,0.621951,0,0,Yes,Private,Urban,0.362148,0.328893,'never smoked',0
+0.368275,Female,0.5,0,0,Yes,Govt_job,Rural,0.290461,0.316598,'formerly smoked',0
+0.67986,Female,0.536585,0,0,Yes,Govt_job,Urban,0.210974,0.252049,smokes,0
+0.434645,Male,0.804878,0,0,Yes,Self-employed,Urban,0.315817,0.284836,'never smoked',0
+0.332026,Female,0.95122,0,0,No,Private,Rural,0.322735,0.303279,'never smoked',0
+0.486399,Female,0.979346,1,0,Yes,Self-employed,Urban,0.270359,0.267339,Unknown,1
+0.48532,Male,0.507965,0,0,Yes,Self-employed,Urban,0.431692,0.437445,Unknown,1
+0.707211,Male,0.317073,0,0,No,Private,Urban,0.262199,0.310451,smokes,0
+0.739745,Male,0.865854,0,0,Yes,Self-employed,Urban,0.353426,0.46209,'formerly smoked',0
+0.534919,Female,0.878049,0,0,Yes,Govt_job,Rural,0.435048,0.224385,'formerly smoked',0
+0.732122,Male,0.865854,1,1,No,Govt_job,Rural,0.798337,0.316598,'never smoked',1
+0.141911,Male,0.609756,0,0,Yes,Private,Urban,0.246633,0.345287,'formerly smoked',0
+0.511228,Female,0.768293,0,0,Yes,Self-employed,Rural,0.750239,0.270492,'never smoked',0
+0.271086,Female,0.634146,0,0,Yes,Private,Rural,0.35545,0.270492,'never smoked',1
+0.563216,Male,0.768293,0,0,Yes,Private,Rural,0.505262,0.324795,'formerly smoked',1
+0.431492,Male,0.073171,0,0,No,children,Rural,0.290903,0.183402,Unknown,0
+0.943159,Female,0.963415,0,0,Yes,Self-employed,Urban,0.841613,0.272541,'never smoked',1
+0.780628,Female,0.670732,0,0,Yes,Self-employed,Rural,0.342165,0.262295,'never smoked',1
+0.427405,Female,0.927218,0,0,Yes,Private,Rural,0.689126,0.273848,Unknown,1
+0.788278,Male,0.329268,0,0,No,Private,Rural,0.256495,0.279713,'never smoked',0
+0.632438,Female,0.695122,0,0,Yes,Self-employed,Urban,0.523699,0.360656,smokes,0
+0.813491,Male,0.804878,1,0,Yes,Private,Rural,0.275631,0.328893,'never smoked',0
+0.768015,Female,0.243902,0,0,No,Private,Urban,0.281997,0.268443,'never smoked',0
+0.230559,Female,0.95122,1,0,No,Private,Urban,0.480386,0.205943,'never smoked',1
+0.427461,Male,0.768293,0,0,Yes,Private,Urban,0.76783,0.314549,'never smoked',1
+0.108815,Male,0.731707,1,0,Yes,Govt_job,Urban,0.783948,0.206967,smokes,1
+0.47014,Female,0.921671,1,0,Yes,Self-employed,Urban,0.779955,0.231623,'never smoked',1
+0.231259,Female,0.621951,0,0,Yes,Private,Rural,0.306543,0.348361,'formerly smoked',0
+0.649999,Female,0.707317,0,0,Yes,Private,Urban,0.357425,0.337296,'formerly smoked',1
+0.829325,Female,0.95122,0,0,Yes,Private,Urban,0.215537,0.247951,Unknown,1
+0.172662,Female,0.341463,0,0,Yes,Private,Rural,0.389711,0.293033,smokes,0
+0.520112,Female,0.914634,0,1,No,Self-employed,Urban,0.403989,0.345287,Unknown,1
+0.759857,Female,0.780488,1,0,Yes,Private,Rural,0.325789,0.252049,'never smoked',0
+0.090568,Female,0.695122,0,0,Yes,Private,Urban,0.288732,0.334016,'never smoked',0
+0.465808,Male,0.670732,0,0,Yes,Private,Urban,0.253146,0.276639,'never smoked',0
+0.675363,Male,0.658537,0,0,No,Private,Rural,0.391992,0.280738,'formerly smoked',0
+0.93393,Male,0.715812,0,0,Yes,Private,Rural,0.705719,0.345287,'formerly smoked',1
+0.360118,Female,0.926829,0,0,Yes,Self-employed,Urban,0.984802,0.285861,smokes,0
+0.318358,Male,0.353659,0,0,No,Private,Urban,0.307316,0.380123,'never smoked',0
+0.083877,Male,0.719512,0,0,Yes,Private,Urban,0.317325,0.307377,'formerly smoked',1
+0.766753,Female,0.97561,1,0,Yes,Private,Rural,0.275631,0.227459,'never smoked',1
+0.488429,Male,0.987805,0,0,Yes,Self-employed,Urban,0.365533,0.345287,'never smoked',1
+0.860132,Male,0.865854,0,1,Yes,Private,Rural,0.258998,0.256148,smokes,0
+0.247327,Female,0.597561,0,0,Yes,Govt_job,Rural,0.329764,0.283811,'never smoked',0
+0.261695,Male,0.097561,0,0,No,children,Urban,0.388717,0.196721,Unknown,0
+0.023252,Female,0.52439,0,0,Yes,Private,Urban,0.371237,0.487705,smokes,0
+0.356894,Female,0.760767,1,1,Yes,Private,Urban,0.773839,0.458388,smokes,1
+0.373087,Male,0.780488,1,0,Yes,Self-employed,Rural,0.656105,0.369877,'never smoked',0
+0.016589,Female,0.829268,0,0,Yes,Private,Rural,0.776698,0.402664,Unknown,1
+0.109035,Female,0.54878,0,0,Yes,Private,Rural,0.339332,0.317623,'never smoked',0
+0.197094,Male,0.573171,0,0,Yes,Private,Rural,0.325642,0.227459,smokes,0
+0.280217,Male,1,0,1,Yes,Govt_job,Rural,0.381541,0.256148,'never smoked',1
+0.655004,Female,0.695122,0,0,Yes,Govt_job,Rural,0.650548,0.516393,'never smoked',0
+0.577996,Female,0.987805,1,0,Yes,Self-employed,Urban,0.666924,0.376025,'never smoked',0
+0.260049,Male,0.962466,1,0,No,Private,Urban,0.39905,0.247276,'never smoked',1
+0.053921,Male,0.730574,0,0,Yes,Private,Urban,0.362155,0.301762,'formerly smoked',1
+0.768974,Female,0.304878,0,0,Yes,Private,Rural,0.234194,0.320697,'formerly smoked',0
+0.096915,Female,0.5,0,0,Yes,Private,Rural,0.376794,0.413934,'formerly smoked',0
+0.688758,Male,0.121951,0,0,No,children,Urban,0.203651,0.156762,Unknown,0
+0.039018,Female,0.560976,0,0,Yes,Private,Rural,0.31578,0.206967,'formerly smoked',0
+0.553702,Female,0.207317,0,0,No,Private,Rural,0.285052,0.245902,Unknown,0
+0.680957,Female,0.170732,0,0,No,children,Rural,0.213182,0.316598,Unknown,1
+0.268029,Male,0.47561,0,0,Yes,Private,Urban,0.801317,0.404713,'never smoked',0
+0.119989,Female,0.768293,0,0,Yes,Govt_job,Urban,0.726945,0.345287,'never smoked',1
+0.448711,Female,0.987805,0,0,Yes,Private,Rural,0.67859,0.281762,'never smoked',1
+0.250077,Female,0.984935,1,0,No,Private,Urban,0.418832,0.238186,'never smoked',1
+0.71275,Female,0.304878,0,0,Yes,Private,Rural,0.294178,0.375,Unknown,0
+0.487853,Male,0.743902,0,0,Yes,Private,Rural,0.330279,0.260246,'never smoked',0
+0.376446,Female,0.731707,0,0,No,Private,Urban,0.328329,0.387295,'never smoked',1
+0.986811,Female,0.609756,0,0,Yes,Private,Urban,0.349636,0.268443,'formerly smoked',0
+0.20122,Female,0.402439,0,0,Yes,Self-employed,Rural,0.365423,0.219262,'never smoked',0
+0.894653,Female,0.695122,0,0,Yes,Self-employed,Rural,0.472069,0.35041,'never smoked',0
+0.825089,Female,0.597561,0,0,Yes,Private,Urban,0.630124,0.352459,smokes,1
+0.72051,Male,0.231707,0,0,No,Private,Rural,0.238905,0.230533,Unknown,0
+0.201371,Female,0.536585,0,0,Yes,Private,Urban,0.271841,0.295082,smokes,0
+0.649217,Male,0.930568,0,0,Yes,Private,Urban,0.413212,0.316001,Unknown,1
+0.207477,Female,0.785037,0,0,Yes,Private,Urban,0.773525,0.476237,'never smoked',1
+0.237291,Female,0.878049,1,0,Yes,Private,Urban,0.816185,0.307377,'never smoked',1
+0.041308,Female,0.963415,0,0,Yes,Self-employed,Rural,0.308015,0.294057,'never smoked',0
+0.62428,Male,0.829268,0,0,Yes,Private,Rural,0.860896,0.434426,'never smoked',1
+0.560721,Female,0.95122,0,0,Yes,Self-employed,Rural,0.223265,0.345287,'formerly smoked',1
+0.360982,Female,0.841463,0,0,Yes,Private,Urban,0.337271,0.26332,'formerly smoked',0
+0.778709,Male,0.926829,0,0,Yes,Govt_job,Urban,0.303047,0.398566,'never smoked',0
+0.412449,Male,0.009756,0,0,No,children,Rural,0.363104,0.179303,Unknown,0
+0.739874,Female,0.985364,1,0,Yes,Private,Rural,0.268397,0.249331,'never smoked',1
+0.427118,Female,0.47561,0,0,Yes,Self-employed,Urban,0.359756,0.303279,smokes,1
+0.97805,Female,0.487805,0,0,Yes,Govt_job,Urban,0.420696,0.289959,smokes,0
+0.484947,Male,0.45122,0,0,Yes,Govt_job,Rural,0.273386,0.369877,'never smoked',0
+0.710557,Male,0.426829,0,0,Yes,Private,Rural,0.352874,0.35041,Unknown,0
+0.111791,Male,0.695122,1,0,Yes,Govt_job,Urban,0.290425,0.283811,'formerly smoked',1
+0.555909,Male,0.634146,0,0,Yes,Private,Rural,0.822772,0.366803,'never smoked',0
+0.879188,Male,0.121951,0,0,No,children,Urban,0.232134,0.210041,smokes,0
+0.14129,Male,0.598792,0,0,No,Private,Rural,0.385442,0.312693,smokes,1
+0.657376,Male,0.170732,0,0,No,children,Rural,0.427615,0.214139,Unknown,0
+0.770345,Male,0.52439,0,0,No,Govt_job,Urban,0.310701,0.307377,smokes,0
+0.646764,Female,0.597561,0,0,Yes,Private,Rural,0.221609,0.322746,smokes,0
+0.279353,Male,0.487805,0,0,Yes,Self-employed,Urban,0.257857,0.282787,smokes,0
+0.551892,Female,0.005854,0,0,No,children,Rural,0.436999,0.178279,Unknown,0
+0.856211,Male,1,1,0,Yes,Private,Rural,0.836388,0.341189,'never smoked',0
+0.562558,Female,0.378049,0,0,Yes,Govt_job,Rural,0.203393,0.332992,'formerly smoked',0
+0.627351,Female,0.390244,0,0,Yes,Private,Rural,0.338485,0.282787,smokes,0
+0.055895,Male,0.597561,0,0,Yes,Private,Urban,0.808493,0.55123,Unknown,0
+0.915629,Female,0.646341,0,0,Yes,Private,Rural,0.346434,0.283811,smokes,0
+0.204127,Male,0.780488,0,0,Yes,Govt_job,Rural,0.418341,0.247951,'never smoked',0
+0.491335,Female,0.014146,0,0,No,children,Urban,0.239236,0.17418,Unknown,0
+0.384535,Male,0.158537,0,0,No,children,Urban,0.303157,0.248975,Unknown,0
+0.942158,Female,0.95122,0,0,Yes,Private,Rural,0.489917,0.247951,Unknown,0
+0.9136,Female,0.829268,1,0,No,Self-employed,Urban,0.293626,0.304303,'never smoked',1
+0.591226,Female,0.609756,0,0,Yes,Govt_job,Urban,0.274969,0.292008,'never smoked',0
+0.948903,Male,0.426829,0,0,No,Private,Rural,0.255906,0.280738,'never smoked',0
+0.12402,Male,0.817073,0,1,Yes,Private,Urban,0.841577,0.375,'formerly smoked',1
+0.563052,Female,0.54878,0,0,Yes,Private,Rural,0.824685,0.579918,'never smoked',1
+0.029915,Female,0.97561,1,0,Yes,Self-employed,Rural,0.334953,0.33709,'formerly smoked',1
+0.122704,Female,0.182927,0,0,No,Private,Urban,0.417936,0.281762,'formerly smoked',0
+0.900288,Female,0.585366,0,0,Yes,Private,Rural,0.49529,0.288934,smokes,0
+0.486194,Male,0.817073,0,0,Yes,Private,Urban,0.35821,0.296107,'never smoked',0
+0.467782,Male,0.914634,1,0,Yes,Private,Urban,0.814345,0.264344,smokes,1
+0.294379,Male,0.634146,0,1,Yes,Self-employed,Rural,0.378928,0.429303,'formerly smoked',0
+0.960269,Male,0.707317,0,0,Yes,Private,Urban,0.262015,0.345287,Unknown,1
+0.275313,Male,0.987882,0,0,Yes,Private,Rural,0.399664,0.305541,'formerly smoked',1
+0.190033,Female,0.634146,1,0,Yes,Self-employed,Urban,0.858504,0.501025,'never smoked',1
+0.992131,Male,0.926829,0,0,Yes,Private,Urban,0.384448,0.207992,Unknown,1
+0.231045,Male,0.95122,1,0,No,Private,Urban,0.420865,0.237463,'never smoked',1
+0.893831,Male,0.914634,1,0,Yes,Private,Rural,0.731545,0.345287,smokes,0
+0.90765,Male,0.719512,0,0,Yes,Private,Urban,0.408626,0.327869,'formerly smoked',1
+0.072608,Female,0.536585,0,0,No,Private,Urban,0.280783,0.3125,'never smoked',0
+0.984165,Female,0.837791,0,0,No,Govt_job,Urban,0.272837,0.308545,Unknown,1
+0.436756,Female,0.939024,0,0,Yes,Self-employed,Rural,0.383565,0.243852,smokes,0
+0.490286,Female,0.980332,0,0,Yes,Private,Rural,0.32025,0.241221,'never smoked',1
+0.019934,Female,0.512195,0,0,No,Private,Urban,0.309229,0.321721,'never smoked',0
+0.2432,Male,0.695122,0,0,Yes,Private,Rural,0.312652,0.376025,Unknown,1
+0.955141,Female,0.402439,0,0,Yes,Self-employed,Rural,0.415618,0.440574,'never smoked',0
+0.717946,Male,0.560976,0,0,Yes,Private,Urban,0.214985,0.253074,'formerly smoked',0
+0.662161,Female,0.97561,0,0,Yes,Private,Rural,0.25874,0.237705,Unknown,0
+0.587072,Female,0.158537,0,0,No,Private,Rural,0.223338,0.245902,smokes,0
+0.279586,Female,0.817073,1,0,Yes,Private,Urban,0.35718,0.316598,'never smoked',0
+0.973293,Female,0.097561,0,0,No,children,Urban,0.273865,0.230533,Unknown,0
+0.039471,Female,0.182927,0,0,No,Self-employed,Urban,0.331567,0.328893,'never smoked',0
+0.02768,Male,0.243902,0,0,No,Private,Rural,0.261132,0.345287,Unknown,0
+0.620743,Female,0.902439,0,0,Yes,Private,Rural,0.852322,0.354508,'formerly smoked',1
+0.316616,Male,0.792683,0,0,Yes,Self-employed,Urban,0.388644,0.285861,Unknown,0
+0.57742,Male,0.52439,0,0,Yes,Self-employed,Urban,0.527821,0.470287,Unknown,1
+0.932616,Female,0.963415,0,1,No,Private,Urban,0.755612,0.317623,smokes,1
+0.182438,Male,0.695122,0,0,Yes,Govt_job,Urban,0.27795,0.339139,'formerly smoked',0
+0.173965,Female,0.768293,0,0,Yes,Govt_job,Rural,0.755686,0.432377,'formerly smoked',1
+0.831365,Female,0.6111,0,0,Yes,Govt_job,Rural,0.609792,0.314857,Unknown,1
+0.485838,Female,0.341463,0,0,Yes,Private,Rural,0.270074,0.315574,Unknown,0
+0.161366,Female,0.304878,0,0,Yes,Govt_job,Urban,0.343085,0.345287,smokes,0
+0.049671,Female,0.45122,0,0,Yes,Self-employed,Urban,0.349893,0.349385,'never smoked',0
+0.696243,Male,0.768293,0,0,Yes,Private,Rural,0.841098,0.280738,'never smoked',1
+0.323187,Female,0.936513,1,0,Yes,Self-employed,Urban,0.73547,0.31532,'formerly smoked',1
+0.356663,Female,0.804878,0,0,Yes,Self-employed,Urban,0.373335,0.345287,Unknown,1
+0.155537,Male,0.79776,0,1,Yes,Govt_job,Urban,0.279088,0.269152,Unknown,1
+0.356101,Male,0.95122,0,0,Yes,Self-employed,Urban,0.80393,0.27459,Unknown,1
+0.171196,Male,0.792683,0,0,Yes,Private,Urban,0.2983,0.308402,smokes,0
+0.931772,Female,0.853105,1,0,Yes,Self-employed,Rural,0.21926,0.304148,smokes,1
+0.146833,Female,0.682927,0,0,Yes,Private,Urban,0.681423,0.413934,'formerly smoked',1
+0.124088,Female,0.609756,0,0,Yes,Private,Urban,0.279238,0.307377,'never smoked',0
+0.706937,Female,0.292683,0,0,No,Govt_job,Urban,0.385884,0.202869,'never smoked',0
+0.18496,Male,0.97561,0,0,Yes,Private,Rural,0.955435,0.324795,smokes,1
+0.002879,Male,0.987805,0,0,Yes,Self-employed,Rural,0.336866,0.321721,'never smoked',1
+0.94198,Female,0.280488,0,0,No,Private,Urban,0.235887,0.202869,Unknown,0
+0.030316,Female,0.933375,1,0,Yes,Private,Rural,0.655136,0.274278,'formerly smoked',1
+0.103469,Male,0.902439,0,0,Yes,Private,Urban,0.268492,0.320697,smokes,1
+0.599356,Male,0.695122,1,0,Yes,Private,Urban,0.780452,0.452869,smokes,1
+0.962997,Female,0.268293,0,0,No,Private,Urban,0.243946,0.210041,smokes,0
+0.567919,Male,0.719512,0,1,Yes,Self-employed,Rural,0.717524,0.311475,Unknown,0
+0.930849,Female,0.860738,0,0,Yes,Self-employed,Urban,0.271341,0.321213,'never smoked',1
+0.777431,Male,0.663921,0,0,Yes,Private,Rural,0.279932,0.26271,'never smoked',1
+0.649986,Female,0.170732,0,0,No,children,Rural,0.411275,0.254098,Unknown,0
+0.827502,Female,0.621951,0,0,Yes,Private,Urban,0.375764,0.23668,'never smoked',0
+0.785372,Male,0.682927,0,0,No,Private,Rural,0.230367,0.347336,'never smoked',0
+0.720853,Female,0.621951,0,0,Yes,Self-employed,Rural,0.357879,0.220287,'never smoked',0
+0.350411,Female,0.804878,0,1,Yes,Govt_job,Rural,0.280084,0.379098,Unknown,0
+0.698259,Female,0.926829,0,0,Yes,Private,Urban,0.213145,0.345287,'formerly smoked',1
+0.420661,Female,0.914634,0,0,Yes,Private,Rural,0.733054,0.272541,Unknown,1
+0.571333,Female,0.54878,0,0,Yes,Private,Rural,0.297821,0.23668,'never smoked',0
+0.642651,Male,0.426829,0,0,Yes,Private,Urban,0.534445,0.330943,'never smoked',0
+0.338155,Female,0.780488,1,0,Yes,Private,Rural,0.345882,0.387295,'formerly smoked',0
+0.760337,Female,0.731707,0,0,No,Private,Rural,0.337897,0.289959,'formerly smoked',0
+0.868289,Female,0.390244,0,0,Yes,Self-employed,Urban,0.406013,0.245902,smokes,0
+0.15436,Female,0.646341,0,0,Yes,Private,Urban,0.83786,0.345287,'never smoked',0
+0.639841,Female,0.914634,1,0,Yes,Self-employed,Rural,0.725178,0.267418,'never smoked',0
+0.104562,Male,0.930323,0,0,Yes,Private,Urban,0.322971,0.345287,Unknown,1
+0.207253,Female,0.280488,0,0,No,Private,Rural,0.352028,0.203893,smokes,0
+0.18215,Male,0.036585,0,0,No,children,Rural,0.298079,0.21209,Unknown,0
+0.886112,Female,0.585366,0,0,Yes,Private,Urban,0.346066,0.335041,'never smoked',0
+0.879819,Female,0.719512,1,0,Yes,Private,Urban,0.753882,0.315574,'never smoked',0
+0.301467,Female,0.304878,0,0,No,Private,Urban,0.281298,0.494877,Unknown,0
+0.3687,Male,0.097561,0,0,No,children,Urban,0.372636,0.346311,Unknown,0
+0.031478,Male,0.95122,1,0,Yes,Self-employed,Urban,0.331898,0.345287,Unknown,0
+0.691143,Female,0.207317,0,0,No,Private,Urban,0.355008,0.262295,Unknown,0
+0.846847,Male,0.365854,0,0,No,Private,Urban,0.326231,0.227459,'never smoked',0
+0.516191,Female,0.841463,1,1,No,Self-employed,Urban,0.265585,0.377049,'never smoked',1
+0.724239,Male,0.731707,0,0,Yes,Private,Rural,0.230367,0.311475,Unknown,0
+0.444612,Female,0.04878,0,0,No,children,Rural,0.386215,0.295082,Unknown,0
+0.85935,Female,0.463415,1,0,Yes,Private,Urban,0.507618,0.428279,'never smoked',0
+0.258994,Male,0.292683,0,0,No,Govt_job,Rural,0.366711,0.515369,'never smoked',0
+0.049068,Female,0.804878,0,1,Yes,Private,Urban,0.3482,0.304303,'formerly smoked',0
+0.596518,Female,0.609756,1,0,Yes,Govt_job,Urban,0.220394,0.26127,'never smoked',0
+0.503236,Female,0.926829,0,0,Yes,Self-employed,Urban,0.391588,0.345287,'formerly smoked',1
+0.237113,Female,0.378049,0,0,Yes,Self-employed,Urban,0.760249,0.42418,smokes,0
+0.882547,Male,0.719512,0,0,Yes,Private,Urban,0.738279,0.366803,'formerly smoked',1
+0.121072,Female,0.707317,0,0,Yes,Private,Rural,0.347023,0.298156,Unknown,0
+0.182726,Female,0.54878,0,0,Yes,Private,Rural,0.393575,0.342213,Unknown,0
+0.726186,Female,0.54878,0,0,Yes,Self-employed,Rural,0.54887,0.343238,Unknown,0
+0.437784,Female,0.158537,0,0,No,children,Urban,0.281703,0.298156,Unknown,0
+0.114066,Male,0.02439,0,0,No,children,Rural,0.270921,0.213115,Unknown,0
+0.743803,Male,0.134146,0,0,No,children,Urban,0.530213,0.165984,'formerly smoked',0
+0.129109,Female,0.963358,0,0,Yes,Private,Rural,0.759287,0.345287,Unknown,1
+0.867134,Male,0.711086,0,0,Yes,Private,Urban,0.721798,0.361452,'formerly smoked',1
+0.163024,Male,0.219512,0,0,No,Govt_job,Urban,0.392066,0.276639,'never smoked',0
+0.252673,Female,0.987805,0,0,Yes,Self-employed,Urban,0.334511,0.319672,'formerly smoked',0
+0.116243,Female,0.955139,0,0,Yes,Self-employed,Rural,0.272772,0.214127,'never smoked',1
+0.492747,Male,0.463415,0,0,Yes,Private,Urban,0.615147,0.1875,'never smoked',0
+0.381149,Female,0.414634,0,0,Yes,Private,Urban,0.416795,0.282787,'never smoked',0
+0.86589,Male,0.207317,0,0,No,Private,Urban,0.23287,0.411885,Unknown,0
+0.533836,Female,0.292683,0,0,No,Private,Rural,0.587694,0.26332,Unknown,0
+0.643407,Male,0.945102,1,0,Yes,Private,Rural,0.261938,0.345287,'never smoked',1
+0.814875,Female,0.695122,0,0,Yes,Private,Urban,0.816553,0.382172,smokes,1
+0.225514,Female,0.402439,0,0,Yes,Govt_job,Rural,0.282108,0.254098,'never smoked',0
+0.60011,Female,0.341463,0,0,No,Private,Urban,0.381909,0.241803,Unknown,0
+0.322772,Female,0.304878,0,0,No,Private,Rural,0.300066,0.441598,Unknown,0
+0.228848,Male,0.76797,0,0,Yes,Private,Rural,0.318881,0.370412,Unknown,1
+0.646655,Female,0.939024,1,0,Yes,Self-employed,Urban,0.456797,0.321721,'never smoked',1
+0.611228,Female,0.682927,0,1,Yes,Private,Rural,0.257673,0.330943,'never smoked',0
+0.808007,Male,0.719512,0,0,Yes,Private,Rural,0.747626,0.444672,Unknown,0
+0.209145,Female,0.195122,0,0,No,Private,Rural,0.346029,0.26332,'never smoked',0
+0.3428,Female,0.752827,0,0,Yes,Private,Urban,0.781199,0.461261,'formerly smoked',1
+0.982163,Female,0.829268,0,0,No,Govt_job,Urban,0.302127,0.277664,Unknown,1
+0.144612,Male,0.804878,0,0,Yes,Private,Rural,0.281372,0.217213,'formerly smoked',1
+0.292473,Male,0.682927,1,0,Yes,Private,Rural,0.760506,0.224385,smokes,0
+0.498094,Male,0.219512,0,0,No,Private,Rural,0.25885,0.247951,Unknown,0
+0.934919,Male,0.768293,0,0,Yes,Self-employed,Urban,0.913999,0.329918,smokes,0
+0.40144,Male,0.926829,1,0,Yes,Self-employed,Rural,0.715279,0.276639,'formerly smoked',1
+0.5687,Female,0.060976,0,0,No,children,Rural,0.237175,0.222336,Unknown,0
+0.397971,Female,0.5,0,0,Yes,Private,Rural,0.335026,0.251025,'never smoked',0
+0.486866,Female,0.853659,0,0,Yes,Self-employed,Rural,0.28093,0.25,'formerly smoked',1
+0.045956,Male,0.95122,1,0,Yes,Self-employed,Urban,0.342717,0.345287,'formerly smoked',1
+0.911626,Male,0.585366,0,0,Yes,Private,Urban,0.338412,0.255123,Unknown,0
+0.338922,Male,0.292683,0,0,No,Private,Urban,0.266026,0.227459,Unknown,0
+0.093913,Male,0.036585,0,0,No,children,Urban,0.343012,0.279713,Unknown,0
+0.220414,Male,0.768293,0,1,Yes,Self-employed,Urban,0.429418,0.353484,'formerly smoked',1
+0.372484,Female,0.804878,1,0,Yes,Govt_job,Rural,0.428903,0.318648,'formerly smoked',1
+0.485961,Male,0.890244,0,0,Yes,Govt_job,Rural,0.767977,0.307377,Unknown,0
+0.668988,Female,0.914634,0,0,Yes,Govt_job,Urban,0.229926,0.345287,Unknown,1
+0.342432,Female,0.878049,1,0,Yes,Private,Rural,0.274638,0.23668,'formerly smoked',1
+0.430779,Male,0.890244,0,1,Yes,Govt_job,Rural,0.808604,0.293033,'never smoked',1
+0.83263,Male,0.02439,0,0,No,children,Urban,0.328697,0.17623,Unknown,0
+0.241829,Male,0.536585,0,0,Yes,Govt_job,Rural,0.321962,0.272541,'never smoked',0
+0.673567,Male,0.902439,0,0,Yes,Private,Urban,0.362663,0.262295,Unknown,1
+0.406855,Male,0.585366,0,0,No,Private,Urban,0.297564,0.281762,Unknown,0
+0.454297,Female,0.692262,0,0,Yes,Govt_job,Urban,0.370577,0.292284,Unknown,1
+0.935947,Female,0.768293,0,0,Yes,Self-employed,Urban,0.345477,0.356557,Unknown,0
+0.257349,Female,0.95536,0,0,No,Private,Urban,0.336789,0.345287,Unknown,1
+0.224541,Female,0.768293,0,0,Yes,Govt_job,Urban,0.45584,0.357582,Unknown,0
+0.630175,Female,0.719512,0,0,Yes,Private,Rural,0.428498,0.243852,smokes,1
+0.238525,Male,0.5,0,0,Yes,Private,Rural,0.374586,0.273566,Unknown,0
+0.624541,Female,0.015122,0,0,No,children,Urban,0.229631,0.226434,Unknown,0
+0.843323,Female,0.865854,0,0,Yes,Self-employed,Urban,0.530765,0.226434,'formerly smoked',0
+0.890951,Male,0.670732,0,0,Yes,Private,Urban,0.399794,0.302254,'never smoked',0
+0.085879,Male,0.390244,0,0,Yes,Private,Rural,0.26621,0.329918,Unknown,0
+0.022841,Male,0.853659,0,0,Yes,Govt_job,Urban,0.745382,0.345287,'formerly smoked',0
+0.785166,Female,0.695122,0,0,Yes,Private,Rural,0.697137,0.366803,'never smoked',0
+0.075555,Male,0.804878,0,0,Yes,Self-employed,Urban,0.262678,0.345287,'formerly smoked',0
+0.156046,Male,0.219512,0,0,No,Private,Rural,0.360896,0.245902,'never smoked',0
+0.76031,Female,0.585366,0,0,Yes,Private,Urban,0.405461,0.310451,smokes,0
+0.355141,Female,0.926829,1,1,Yes,Self-employed,Urban,0.735482,0.345287,smokes,1
+0.577296,Female,0.292683,0,0,No,Govt_job,Rural,0.371568,0.285861,'never smoked',0
+0.195339,Male,0.585366,0,0,No,Govt_job,Urban,0.309855,0.304303,'never smoked',1
+0.062942,Female,1,0,0,Yes,Self-employed,Rural,0.433319,0.305328,'never smoked',0
+0.959457,Male,0.865794,1,1,Yes,Private,Rural,0.991482,0.337472,smokes,1
+0.430433,Male,0.91195,0,1,Yes,Govt_job,Rural,0.755925,0.285669,'never smoked',1
+0.102371,Male,0.927407,0,0,Yes,Private,Rural,0.272996,0.239171,'formerly smoked',1
+0.143049,Female,0.841463,0,0,No,Private,Urban,0.347354,0.233607,'never smoked',1
+0.182986,Male,0.821181,0,1,Yes,Private,Urban,0.277012,0.327607,smokes,1
+0.847861,Male,0.707317,0,0,Yes,Private,Rural,0.698609,0.345287,Unknown,1
+0.554702,Female,0.829268,1,1,Yes,Private,Urban,0.910834,0.414959,'formerly smoked',1
+0.79601,Female,0.853659,1,0,Yes,Self-employed,Rural,0.568926,0.292008,'formerly smoked',0
+0.426995,Female,0.207317,0,0,No,Private,Urban,0.24954,0.570697,'never smoked',0
+0.95085,Male,0.036585,0,0,No,children,Rural,0.317877,0.233607,Unknown,0
+0.589512,Female,0.829268,0,0,Yes,Private,Urban,0.401965,0.320697,'never smoked',0
+0.8881,Male,1,0,1,Yes,Private,Rural,0.766542,0.332992,Unknown,1
+0.592213,Female,0.634146,0,0,Yes,Self-employed,Urban,0.219106,0.432377,Unknown,0
+0.587229,Female,0.551557,0,0,Yes,Private,Rural,0.817039,0.534821,'never smoked',1
+0.59655,Male,0.690341,1,0,Yes,Private,Rural,0.863023,0.32869,'never smoked',1
+0.031889,Female,0.817073,1,0,Yes,Private,Rural,0.659159,0.28791,'formerly smoked',1
+0.194379,Female,0.585366,0,0,Yes,Private,Rural,0.718187,0.432377,Unknown,0
+0.377184,Female,0.705811,0,0,No,Private,Urban,0.319702,0.325555,'never smoked',1
+0.267403,Female,0.570931,0,0,Yes,Private,Rural,0.335155,0.397192,'formerly smoked',1
+0.974184,Female,0.658537,0,0,Yes,Private,Rural,0.258298,0.400615,smokes,0
+0.964409,Male,1,0,0,Yes,Private,Urban,0.530654,0.362705,smokes,0
+0.505682,Female,0.393173,1,0,Yes,Private,Rural,0.222079,0.363178,smokes,1
+0.464478,Male,0.512195,0,0,Yes,Private,Rural,0.306948,0.260246,Unknown,1
+0.302961,Female,0.353659,0,0,Yes,Self-employed,Rural,0.254361,0.27459,'never smoked',0
+0.110712,Female,0.917303,0,0,Yes,Self-employed,Rural,0.272116,0.204054,'never smoked',1
+0.677434,Male,0.768293,0,0,Yes,Govt_job,Urban,0.243358,0.473361,'never smoked',0
+0.276419,Female,0.97561,0,0,Yes,Private,Rural,0.278281,0.257172,smokes,0
+0.505188,Female,0.686072,1,1,Yes,Private,Urban,0.786412,0.394349,smokes,1
+0.745832,Male,0.97561,0,1,Yes,Self-employed,Urban,0.930007,0.3125,'formerly smoked',1
+0.611845,Female,0.463415,0,0,Yes,Private,Rural,0.33521,0.227459,'never smoked',0
+0.741322,Female,0.134146,0,0,No,children,Urban,0.29922,0.192623,'never smoked',0
+0.123156,Female,0.97561,1,0,Yes,Private,Urban,0.328108,0.245902,'never smoked',0
+0.938093,Male,0.965771,1,1,Yes,Private,Urban,0.741539,0.321077,'formerly smoked',1
+0.420469,Male,0.036585,0,0,No,children,Rural,0.35004,0.184426,Unknown,0
+0.633726,Male,0.634584,0,0,Yes,Self-employed,Urban,0.519332,0.46121,Unknown,1
+0.965574,Female,0.402439,0,0,Yes,Private,Urban,0.310885,0.455943,'never smoked',0
+0.119139,Female,0.987805,0,0,Yes,Private,Urban,0.296018,0.329918,'never smoked',0
+0.376304,Female,0.728719,0,0,No,Private,Urban,0.286699,0.356601,'never smoked',1
+0.112599,Male,0.95122,0,1,Yes,Private,Urban,0.809009,0.345287,Unknown,1
+0.432726,Female,0.463415,0,0,Yes,Private,Rural,0.373335,0.345287,'formerly smoked',1
+0.345846,Male,0.695122,0,1,No,Govt_job,Urban,0.798852,0.345287,Unknown,1
+0.637743,Female,0.804878,0,1,Yes,Private,Rural,0.723412,0.429303,'formerly smoked',0
+0.4932,Female,0.195122,0,0,No,Private,Rural,0.317657,0.1875,Unknown,0
+0.647601,Female,0.609756,0,0,Yes,Private,Urban,0.569184,0.346311,'never smoked',0
+0.448163,Female,0.585366,0,0,Yes,Private,Urban,0.310517,0.277664,Unknown,0
+0.341445,Female,0.792683,0,0,Yes,Private,Urban,0.757231,0.471311,'formerly smoked',1
+0.142226,Female,0.292683,0,0,Yes,Private,Rural,0.281225,0.254098,smokes,0
+0.780409,Male,0.634146,1,0,Yes,Private,Rural,0.427651,0.336066,smokes,0
+0.315972,Male,0.52439,0,0,Yes,Private,Urban,0.368588,0.61168,'never smoked',0
+0.847285,Male,0.182927,0,0,No,Private,Urban,0.239383,0.252049,Unknown,0
+0.198533,Female,0.963415,0,0,Yes,Self-employed,Urban,0.296497,0.243852,'never smoked',0
+0.050973,Female,0.560976,0,0,Yes,Govt_job,Urban,0.408847,0.23873,smokes,0
+0.499465,Male,0.47561,0,0,Yes,Govt_job,Rural,0.571245,0.370902,'never smoked',0
+0.518344,Female,0.414634,0,0,No,Govt_job,Urban,0.832708,0.393443,Unknown,0
+0.739704,Male,0.207317,0,0,No,Private,Rural,0.255575,0.282787,Unknown,0
+0.22875,Female,0.865854,1,0,Yes,Private,Urban,0.716199,0.32377,'never smoked',0
+0.188319,Male,0.292683,0,0,Yes,Private,Urban,0.348348,0.328893,'formerly smoked',0
+0.882821,Male,0.682927,0,0,No,Self-employed,Rural,0.323655,0.258197,'never smoked',0
+0.582122,Male,0.585366,0,0,Yes,Self-employed,Rural,0.798116,0.345287,smokes,0
+0.188497,Female,0.463415,0,0,Yes,Private,Rural,0.312026,0.247951,'formerly smoked',0
+0.302865,Female,0.756098,0,0,Yes,Self-employed,Urban,0.664716,0.32582,'formerly smoked',0
+0.033699,Female,0.95122,0,0,Yes,Private,Rural,0.867116,0.330943,'never smoked',1
+0.691116,Female,0.95122,0,0,No,Govt_job,Rural,0.282034,0.354508,'never smoked',0
+0.387455,Male,0.963415,0,1,Yes,Self-employed,Urban,0.392581,0.315574,'never smoked',0
+0.023869,Male,0.939024,0,0,Yes,Private,Urban,0.273276,0.345287,'formerly smoked',0
+0.800096,Female,0.865854,1,0,Yes,Private,Urban,0.478288,0.452869,smokes,0
+0.49819,Female,0.47561,1,0,Yes,Private,Rural,0.213771,0.401639,smokes,1
+0.413847,Female,0.060976,0,0,No,children,Urban,0.300508,0.17623,Unknown,0
+0.850274,Male,0.658537,0,0,Yes,Govt_job,Rural,0.323287,0.318648,smokes,1
+0.933562,Female,0.560976,0,0,Yes,Private,Rural,0.459704,0.295082,Unknown,0
+0.056197,Female,0.256098,0,0,No,Private,Urban,0.288327,0.207992,Unknown,0
+0.822635,Male,0.987805,0,0,Yes,Govt_job,Rural,0.327593,0.275615,'never smoked',0
+0.034796,Female,0.060976,0,0,No,children,Rural,0.387061,0.345287,Unknown,0
+0.576803,Female,0.609756,1,0,Yes,Private,Rural,0.269302,0.310451,'formerly smoked',1
+0.788434,Male,0.963851,0,0,Yes,Private,Urban,0.693854,0.300505,'formerly smoked',1
+0.046477,Female,0.439024,0,0,Yes,Private,Rural,0.369213,0.237705,'never smoked',0
+0.119591,Female,0.195122,0,0,No,Private,Rural,0.258151,0.220287,Unknown,0
+0.32997,Female,0.390244,0,0,Yes,Private,Urban,0.316148,0.226434,Unknown,0
+0.095421,Female,0.317073,0,0,No,Govt_job,Urban,0.332487,0.395492,Unknown,0
+0.009761,Female,1,1,1,No,Private,Rural,0.309229,0.271516,'formerly smoked',1
+0.486016,Female,0.621951,0,0,Yes,Private,Rural,0.344704,0.196721,'never smoked',0
+0.726844,Female,0.021951,0,0,No,children,Urban,0.480643,0.147541,Unknown,0
+0.001248,Female,0.512195,0,0,No,Private,Urban,0.362589,0.189549,'never smoked',0
+0.981847,Male,0.956386,0,0,Yes,Self-employed,Rural,0.383936,0.232899,'never smoked',1
+0.442007,Female,0.329268,0,0,No,Private,Urban,0.344263,0.42623,'never smoked',0
+0.779284,Male,0.707317,0,1,Yes,Private,Rural,0.885368,0.321721,smokes,1
+0.625967,Male,0.170732,0,0,No,Private,Rural,0.310628,0.347336,'never smoked',0
+0.720976,Female,0.768293,0,0,Yes,Private,Rural,0.31578,0.364754,'never smoked',0
+0.147409,Female,0.743902,0,0,Yes,Private,Rural,0.289431,0.370902,'formerly smoked',0
+0.505306,Male,0.939024,0,0,Yes,Self-employed,Rural,0.596673,0.334016,'formerly smoked',1
+0.632588,Female,0.292683,0,0,No,Private,Rural,0.543681,0.219262,Unknown,0
+0.393214,Female,0.853659,1,0,Yes,Self-employed,Urban,0.366527,0.351434,'formerly smoked',0
+0.895956,Male,0.134146,0,0,No,children,Urban,0.52197,0.23873,Unknown,0
+0.924021,Female,0.818289,0,0,Yes,Private,Urban,0.351519,0.290479,smokes,1
+0.267398,Female,0.804878,0,0,Yes,Private,Rural,0.32325,0.540984,Unknown,0
+0.956265,Female,0.939024,0,0,Yes,Self-employed,Urban,0.556525,0.255123,'never smoked',0
+0.4415,Female,0.695122,0,0,Yes,Self-employed,Rural,0.350924,0.331967,'formerly smoked',0
+0.930834,Female,1,1,1,Yes,Govt_job,Urban,0.794657,0.285861,'formerly smoked',1
+0.890869,Female,0.512195,0,0,Yes,Govt_job,Urban,0.241628,0.345287,'never smoked',0
+0.595339,Female,0.95122,0,0,Yes,Private,Rural,0.29002,0.20082,Unknown,1
+0.938278,Female,0.621951,0,0,Yes,Private,Rural,0.334069,0.330943,'never smoked',0
+0.081766,Female,0.719512,0,0,Yes,Private,Urban,0.671671,0.308402,Unknown,0
+0.748075,Male,0.918728,1,1,Yes,Private,Rural,0.257978,0.268797,'never smoked',1
+0.75026,Female,0.987805,0,0,No,Govt_job,Urban,0.258703,0.264344,smokes,1
+0.075089,Male,0.768293,0,1,Yes,Self-employed,Urban,0.304409,0.345287,'never smoked',0
+0.901138,Female,0.317073,0,0,Yes,Private,Rural,0.456245,0.308402,'never smoked',0
+0.027598,Male,0.170732,0,0,No,Private,Rural,0.407448,0.345287,'never smoked',0
+0.064601,Female,0.987805,0,1,Yes,Self-employed,Rural,0.289615,0.19877,Unknown,1
+0.969221,Male,0.704834,0,0,Yes,Private,Urban,0.259115,0.344571,Unknown,1
+0.254826,Female,0.926829,0,0,No,Private,Urban,0.331052,0.345287,Unknown,1
+0.797944,Female,0.609756,1,0,Yes,Self-employed,Rural,0.616067,0.316598,'never smoked',1
+0.1636,Female,0.963415,0,0,Yes,Private,Rural,0.624384,0.345287,Unknown,1
+0.822601,Female,0.680704,0,0,No,Self-employed,Urban,0.241365,0.390314,'never smoked',1
+0.6721,Male,0.743902,1,0,Yes,Self-employed,Rural,0.377346,0.414959,'never smoked',0
+0.30765,Female,0.597561,0,0,Yes,Private,Urban,0.985354,0.300205,'formerly smoked',0
+0.465355,Female,0.47561,0,0,Yes,Private,Urban,0.306322,0.269467,'never smoked',1
+0.1738,Female,0.731707,0,0,Yes,Private,Rural,0.364319,0.267418,'never smoked',0
+0.7136,Male,0.243902,0,0,No,Private,Urban,0.219585,0.283811,'never smoked',0
+0.535207,Male,0.134146,0,0,No,children,Rural,0.290829,0.169057,Unknown,0
+0.495317,Female,0.938281,1,0,Yes,Self-employed,Urban,0.718433,0.262411,'never smoked',1
+0.282767,Male,0.621951,1,0,Yes,Private,Urban,0.280047,0.328893,smokes,0
+0.509076,Male,1,0,0,Yes,Govt_job,Urban,0.738169,0.297131,'formerly smoked',1
+0.473334,Female,0.329268,0,0,No,Private,Rural,0.306396,0.227459,'never smoked',0
+0.140951,Female,0.621951,1,0,Yes,Self-employed,Rural,0.648929,0.290984,'never smoked',0
+0.761804,Female,0.414634,0,0,Yes,Private,Rural,0.851917,0.465164,'never smoked',0
+0.543572,Male,0.856062,0,0,Yes,Self-employed,Urban,0.227991,0.345287,'formerly smoked',1
+0.771675,Male,0.597561,0,0,Yes,Private,Urban,0.713439,0.420082,Unknown,0
+0.079243,Female,0.573171,0,0,Yes,Private,Urban,0.274638,0.464139,'never smoked',0
+0.377146,Female,0.926829,1,0,Yes,Self-employed,Urban,0.289541,0.23873,'never smoked',0
+0.481971,Female,0.609756,0,0,Yes,Self-employed,Urban,0.257305,0.191598,'formerly smoked',0
+0.65739,Female,0.597561,0,0,Yes,Self-employed,Urban,0.219916,0.304303,Unknown,0
+0.428489,Female,0.243902,0,0,No,Private,Urban,0.355818,0.252049,Unknown,0
+0.033685,Female,0.817073,0,1,Yes,Self-employed,Rural,0.347575,0.303279,'formerly smoked',0
+0.10085,Male,0.914634,0,0,Yes,Private,Urban,0.385368,0.345287,Unknown,1
+0.310145,Male,0.121951,0,0,No,children,Rural,0.400346,0.215164,Unknown,0
+0.689731,Female,0.45122,0,0,No,Govt_job,Rural,0.284721,0.219262,'never smoked',0
+0.500219,Male,0.073171,0,0,No,children,Urban,0.204644,0.20082,Unknown,0
+0.165369,Female,0.658537,0,0,Yes,Self-employed,Rural,0.705895,0.413934,smokes,1
+0.257101,Male,0.943215,0,1,Yes,Govt_job,Rural,0.339932,0.342577,'never smoked',1
+0.194187,Female,0.878049,0,0,Yes,Private,Urban,0.809266,0.345287,Unknown,1
+0.849465,Male,1,0,1,Yes,Private,Urban,0.53323,0.270492,smokes,1
+0.306594,Female,0.573171,0,0,Yes,Private,Rural,0.717745,0.466189,'never smoked',0
+0.650685,Female,0.426829,0,0,Yes,Private,Urban,0.413447,0.306352,Unknown,0
+0.044598,Male,0.743902,0,1,Yes,Private,Rural,0.411459,0.279713,smokes,1
+0.348393,Male,0.935974,1,0,Yes,Self-employed,Rural,0.725514,0.277173,'formerly smoked',1
+0.393336,Male,0.770928,0,0,Yes,Self-employed,Rural,0.412433,0.378445,'formerly smoked',1
+0.553236,Female,0.743902,0,0,Yes,Private,Urban,0.41985,0.26332,'never smoked',0
+0.353962,Male,0.719512,0,0,Yes,Govt_job,Rural,0.354199,0.23873,'formerly smoked',0
+0.418837,Female,0.95122,0,0,No,Private,Urban,0.382204,0.313525,Unknown,0
+0.34974,Male,1,0,0,Yes,Self-employed,Urban,0.411459,0.202869,'formerly smoked',0
+0.617494,Male,0.670732,0,0,Yes,Private,Urban,0.750018,0.347336,'formerly smoked',0
+0.191316,Male,0.958867,1,0,No,Private,Urban,0.381669,0.226834,'never smoked',1
+0.109981,Male,0.195122,0,0,No,Private,Urban,0.305255,0.219262,'never smoked',0
+0.858349,Female,0.573171,0,0,Yes,Private,Urban,0.503422,0.382172,'never smoked',0
+0.547793,Female,0.414634,0,0,No,Private,Rural,0.320932,0.393443,Unknown,0
+0.511348,Female,0.800502,0,0,Yes,Self-employed,Rural,0.367137,0.286438,'formerly smoked',1
+0.063765,Male,0.95122,0,0,Yes,Private,Rural,0.287149,0.244877,'formerly smoked',1
+0.469189,Female,0.481814,1,0,Yes,Private,Rural,0.235164,0.340009,smokes,1
+0.427598,Male,0.658537,0,0,Yes,Govt_job,Urban,0.268492,0.38627,smokes,0
+0.716781,Male,0.695122,0,0,Yes,Private,Rural,0.725988,0.353484,'formerly smoked',1
+0.708706,Female,0.634146,0,0,Yes,Private,Rural,0.63995,0.366803,'never smoked',0
+0.444187,Male,0.658537,0,0,Yes,Private,Rural,0.356848,0.298156,smokes,1
+0.338209,Female,0.939024,0,1,Yes,Private,Rural,0.852138,0.378074,'never smoked',1
+0.421621,Male,0.512195,0,0,Yes,Govt_job,Urban,0.345146,0.278689,'never smoked',0
+0.676103,Female,0.906017,0,0,Yes,Govt_job,Urban,0.240341,0.307585,Unknown,1
+0.731231,Female,0.963415,0,0,Yes,Govt_job,Urban,0.273129,0.304303,Unknown,0
+0.421756,Male,0.988621,0,1,Yes,Private,Rural,0.375639,0.332739,'never smoked',1
+0.384502,Female,0.804077,1,0,Yes,Govt_job,Rural,0.423376,0.336633,'formerly smoked',1
+0.315684,Female,0.585366,0,0,Yes,Private,Rural,0.364576,0.226434,'never smoked',0
+0.926372,Female,0.953624,0,0,Yes,Private,Urban,0.266719,0.280848,'never smoked',1
+0.434563,Female,0.414634,0,0,Yes,Private,Urban,0.281225,0.282787,smokes,0
+0.648889,Male,0.109756,0,0,No,children,Rural,0.222234,0.168033,Unknown,0
+0.606307,Male,0.182927,0,0,No,Private,Rural,0.226724,0.284836,'never smoked',0
+0.757266,Female,0.609756,0,0,Yes,Self-employed,Urban,0.316185,0.382172,smokes,0
+0.766178,Male,0.231707,0,0,No,Private,Urban,0.440053,0.254098,Unknown,0
+0.690581,Male,0.682927,0,0,Yes,Private,Urban,0.232502,0.322746,Unknown,0
+0.77524,Male,0.963415,0,1,Yes,Private,Rural,0.478325,0.231557,'formerly smoked',1
+0.260433,Female,0.158537,0,0,No,children,Urban,0.387208,0.188525,Unknown,0
+0.067576,Male,0.097561,0,0,No,children,Urban,0.288805,0.164959,Unknown,0
+0.144667,Female,0.987805,0,0,Yes,Self-employed,Rural,0.301575,0.173156,'never smoked',1
+0.212153,Male,0.671881,0,1,Yes,Self-employed,Urban,0.421639,0.304009,'formerly smoked',1
+0.6966,Male,0.243902,0,0,No,Private,Rural,0.237727,0.279713,Unknown,0
+0.76467,Female,0.719512,0,0,Yes,Private,Rural,0.832082,0.336066,'formerly smoked',0
+0.207047,Male,0.95122,1,0,Yes,Private,Urban,0.277177,0.345287,'formerly smoked',1
+0.71711,Male,0.695122,0,0,Yes,Self-employed,Urban,0.250129,0.285861,'never smoked',0
+0.022827,Female,0.963415,1,0,Yes,Self-employed,Rural,0.64076,0.245902,'never smoked',1
+0.910337,Male,0.95122,0,0,Yes,Private,Urban,0.874917,0.345287,'formerly smoked',1
+0.51722,Female,0.97561,1,0,Yes,Self-employed,Urban,0.2523,0.268443,Unknown,1
+0.990047,Male,0.743902,0,0,Yes,Self-employed,Urban,0.254471,0.283811,'formerly smoked',0
+0.496353,Male,0.182927,0,0,No,children,Rural,0.230257,0.330943,'never smoked',0
+0.644434,Female,0.573171,0,0,Yes,Private,Urban,0.252006,0.218238,'never smoked',0
+0.861448,Female,0.390244,0,0,Yes,Private,Urban,0.325053,0.204918,Unknown,0
+0.13178,Male,0.073171,0,0,No,children,Urban,0.26047,0.207992,Unknown,0
+0.740307,Female,0.256098,0,0,No,Private,Urban,0.215868,0.320697,'never smoked',0
+0.924486,Female,0.731707,0,0,Yes,Private,Urban,0.358541,0.270492,smokes,1
+0.641747,Male,0.585366,0,0,Yes,Private,Rural,0.541473,0.228484,Unknown,0
+0.567484,Female,0.533275,0,0,Yes,Private,Rural,0.636806,0.546802,'never smoked',1
+0.440225,Female,0.02439,0,0,No,children,Urban,0.386583,0.209016,Unknown,0
+0.225295,Female,0.439024,0,0,Yes,Private,Rural,0.397402,0.26127,'never smoked',0
+0.267316,Female,0.987805,0,1,No,Self-employed,Urban,0.365938,0.283811,Unknown,0
+0.937867,Male,0.292683,0,0,No,Private,Urban,0.325237,0.205943,smokes,0
+0.233123,Female,0.853659,0,0,Yes,Private,Urban,0.815412,0.48668,'never smoked',1
+0.1415,Female,0.268293,0,0,Yes,Private,Rural,0.272098,0.254098,Unknown,0
+0.47391,Female,0.987805,1,0,Yes,Self-employed,Rural,0.272393,0.256148,'never smoked',1
+0.142112,Male,0.599696,0,0,No,Private,Rural,0.38513,0.316634,smokes,1
+0.336139,Female,0.243902,0,0,No,Private,Rural,0.284426,0.290984,'never smoked',0
+0.92683,Male,0.853659,0,0,Yes,Self-employed,Urban,0.82314,0.351434,'formerly smoked',0
+0.832794,Male,0.743902,1,0,Yes,Self-employed,Rural,0.280084,0.279713,smokes,1
+0.877063,Female,0.939024,0,0,Yes,Govt_job,Rural,0.700375,0.321721,'never smoked',1
+0.165821,Female,0.743902,0,1,Yes,Govt_job,Rural,0.443291,0.377049,smokes,1
+0.610008,Female,0.463415,0,0,Yes,Private,Rural,0.31026,0.265369,smokes,0
+0.064039,Female,0.719512,0,0,No,Private,Urban,0.273607,0.286885,'never smoked',0
+0.963367,Male,1,0,0,Yes,Private,Urban,0.834769,0.259221,'formerly smoked',0
+0.708473,Female,0.743902,0,0,Yes,Self-employed,Rural,0.74413,0.345287,'never smoked',1
+0.169495,Male,0.780488,0,1,Yes,Govt_job,Urban,0.272687,0.295082,Unknown,1
+0.12411,Female,0.731168,0,0,Yes,Private,Urban,0.719704,0.391716,'formerly smoked',1
+0.333137,Male,0.658537,1,0,Yes,Self-employed,Rural,0.360602,0.330943,smokes,0
+0.366424,Female,0.963415,0,0,No,Private,Rural,0.327225,0.234631,'never smoked',1
+0.600781,Female,0.768293,1,0,Yes,Private,Rural,0.210311,0.397541,'never smoked',0
+0.242432,Male,0.804878,0,0,Yes,Self-employed,Urban,0.353978,0.392418,smokes,0
+0.325423,Female,0.932497,1,0,Yes,Self-employed,Urban,0.735462,0.289676,'formerly smoked',1
+0.516119,Female,0.976768,0,0,Yes,Private,Rural,0.282317,0.252589,'never smoked',1
+0.41382,Male,1,0,0,Yes,Private,Rural,0.318761,0.302254,'formerly smoked',1
+0.017288,Male,0.658537,0,0,Yes,Private,Urban,0.262089,0.292008,'never smoked',1
+0.417549,Female,0.963415,0,0,Yes,Private,Rural,0.342423,0.247951,'never smoked',1
+0.320373,Female,0.939024,1,0,Yes,Self-employed,Urban,0.735409,0.286885,'formerly smoked',1
+0.0746,Female,0.665232,1,0,Yes,Private,Urban,0.323477,0.301364,'never smoked',1
+0.66768,Male,0.960569,0,0,Yes,Private,Urban,0.362047,0.228926,Unknown,1
+0.259707,Male,0.317073,0,0,No,Govt_job,Rural,0.282402,0.305328,Unknown,0
+0.832726,Female,0.963415,1,1,No,Self-employed,Rural,0.224258,0.345287,'never smoked',1
+0.023019,Male,0.426829,0,0,Yes,Private,Rural,0.285125,0.345287,'formerly smoked',0
+0.112024,Female,0.04878,0,0,No,children,Rural,0.343159,0.170082,Unknown,0
+0.470044,Male,0.695122,0,0,Yes,Private,Rural,0.34073,0.247951,Unknown,0
+0.028914,Female,0.097561,0,0,No,children,Urban,0.460514,0.304303,Unknown,0
+0.848382,Male,0.682927,0,0,No,Self-employed,Urban,0.51472,0.319672,smokes,0
+0.390636,Male,0.695122,0,0,Yes,Private,Urban,0.317583,0.324795,Unknown,1
+0.680285,Male,0.914634,0,0,Yes,Private,Rural,0.277729,0.251025,'formerly smoked',0
+0.441747,Male,0.731707,0,1,Yes,Private,Urban,0.338265,0.367828,smokes,1
+0.59512,Male,0.692881,0,0,No,Private,Rural,0.34109,0.327829,Unknown,1
+0.631135,Male,0.012195,0,0,No,children,Urban,0.312247,0.207992,Unknown,0
+0.913587,Female,0.597561,0,0,Yes,Govt_job,Urban,0.43181,0.221311,'never smoked',0
+0.222298,Female,0.820051,0,0,Yes,Govt_job,Rural,0.760824,0.44953,'formerly smoked',1
+0.034933,Female,0.987805,0,0,Yes,Self-employed,Urban,0.35269,0.220287,'never smoked',1
+0.521991,Female,0.378049,0,0,Yes,Private,Urban,0.483624,0.255123,smokes,0
+0.744502,Female,0.268293,0,0,Yes,Private,Urban,0.317362,0.319672,'never smoked',0
+0.886372,Female,0.536585,0,0,Yes,Private,Rural,0.209207,0.25,'never smoked',0
+0.025254,Male,0.707317,0,0,Yes,Private,Urban,0.345919,0.345287,Unknown,0
+0.485769,Female,0.439024,0,0,Yes,Private,Rural,0.350924,0.257172,'never smoked',0
+0.434878,Female,0.463415,0,0,No,Self-employed,Urban,0.302789,0.245902,'formerly smoked',1
+0.458651,Female,0.768293,0,0,Yes,Govt_job,Rural,0.392213,0.244877,Unknown,1
+0.214738,Female,0.134146,0,0,No,children,Urban,0.282402,0.195697,Unknown,0
+0.947519,Male,0.829268,1,1,Yes,Private,Rural,1,0.318648,smokes,1
+0.342127,Male,0.699453,0,1,No,Govt_job,Urban,0.76985,0.34971,Unknown,1
+0.806025,Male,0.681109,1,0,Yes,Self-employed,Rural,0.323999,0.263285,smokes,1
+0.853907,Male,0.768293,0,0,Yes,Self-employed,Rural,0.288621,0.192623,'never smoked',0
+0.469561,Male,0.848026,0,0,Yes,Private,Rural,0.333823,0.3396,Unknown,1
+0.854209,Female,0.841463,1,0,Yes,Self-employed,Urban,0.411459,0.267418,'formerly smoked',0
+0.304495,Male,0.938516,1,0,Yes,Private,Rural,0.863165,0.377777,'never smoked',1
+0.508821,Male,0.955794,1,0,Yes,Self-employed,Rural,0.220353,0.26722,'formerly smoked',1
+0.732095,Male,0.902439,0,0,Yes,Private,Rural,0.24023,0.288934,'never smoked',0
+0.66796,Male,0.317073,0,0,No,Private,Urban,0.701663,0.206967,'never smoked',0
+0.228297,Female,0.841463,0,0,Yes,Self-employed,Urban,0.366821,0.180328,'formerly smoked',0
+0.620469,Female,0.463415,0,0,Yes,Private,Rural,0.299109,0.340164,smokes,0
+0.695448,Male,0.743902,0,0,Yes,Private,Rural,0.518731,0.348361,smokes,0
+0.640293,Male,0.829268,0,1,Yes,Private,Urban,0.823692,0.326844,'formerly smoked',1
+0.374596,Female,0.817073,0,0,Yes,Self-employed,Urban,0.252484,0.326844,'never smoked',0
+0.410378,Female,0.060976,0,0,No,children,Rural,0.316884,0.194672,Unknown,0
+0.076552,Female,0.665353,0,0,Yes,Private,Urban,0.668023,0.37553,'formerly smoked',1
+0.875185,Male,0.987805,1,1,Yes,Govt_job,Rural,0.802017,0.246926,'formerly smoked',0
+0.998917,Female,0.634146,0,0,Yes,Private,Urban,0.255023,0.205943,'never smoked',0
+0.03629,Male,0.670732,0,0,Yes,Private,Rural,0.295687,0.294057,smokes,0
+0.898925,Female,0.969273,0,0,Yes,Private,Urban,0.24572,0.326551,'never smoked',1
+0.704483,Male,0.743902,0,0,Yes,Private,Rural,0.298999,0.444672,smokes,0
+0.60643,Female,0.54878,0,0,Yes,Govt_job,Rural,0.312762,0.362705,Unknown,0
+0.565451,Female,0.085366,0,0,No,children,Urban,0.292853,0.158811,Unknown,0
+0.89187,Female,0.414634,0,0,Yes,Private,Urban,0.415875,0.385246,'never smoked',0
+0.735289,Male,0.414634,0,0,No,Govt_job,Urban,0.267719,0.227459,Unknown,0
+0.497052,Male,0.719512,0,0,Yes,Self-employed,Rural,0.434349,0.36373,smokes,1
+0.389608,Female,0.5,0,0,Yes,Private,Rural,0.394421,0.233607,'never smoked',0
+0.860749,Female,0.926829,0,0,Yes,Private,Urban,0.728711,0.396516,Unknown,0
+0.76929,Male,0.780488,0,1,Yes,Private,Urban,0.705123,0.384221,smokes,1
+0.27646,Female,0.939024,0,0,Yes,Private,Urban,0.922941,0.33709,'never smoked',0
+0.171127,Male,0.829268,0,0,Yes,Self-employed,Urban,0.286377,0.281762,smokes,1
+0.513299,Male,0.634146,0,0,Yes,Govt_job,Urban,0.766873,0.368852,'formerly smoked',0
+0.674925,Male,0.634146,0,0,No,Govt_job,Rural,0.267572,0.378074,'formerly smoked',0
+0.851056,Male,0.585366,0,0,Yes,Private,Rural,0.231434,0.303279,Unknown,0
+0.916726,Female,0.585366,0,0,Yes,Private,Urban,0.272724,0.210041,'never smoked',1
+0.532342,Female,1,0,0,Yes,Private,Rural,0.218297,0.340164,'never smoked',1
+0.475295,Female,0.682927,0,0,Yes,Private,Urban,0.285162,0.368852,'formerly smoked',0
+0.846682,Male,0.378049,0,0,Yes,Self-employed,Rural,0.224847,0.271516,'never smoked',0
+0.843543,Female,0.54878,0,0,Yes,Govt_job,Urban,0.271252,0.349385,'never smoked',0
+0.603688,Male,0.682927,1,0,Yes,Private,Rural,0.917458,0.366803,'never smoked',1
+0.957431,Female,0.695122,0,0,Yes,Private,Rural,0.48355,0.330943,'never smoked',0
+0.476117,Female,0.817073,0,0,Yes,Private,Rural,0.3029,0.218238,'never smoked',0
+0.808582,Female,0.853659,0,1,Yes,Private,Rural,0.879775,0.267418,'never smoked',1
+0.67439,Female,0.54878,0,0,Yes,Private,Rural,0.414183,0.328893,'never smoked',0
+0.751673,Male,0.841463,0,1,Yes,Self-employed,Urban,0.718444,0.289959,smokes,1
+0.37816,Male,0.597561,0,0,Yes,Private,Rural,0.324317,0.336066,'never smoked',0
+0.517699,Female,0.463415,0,0,Yes,Private,Urban,0.381173,0.315574,'formerly smoked',0
+0.078256,Female,0.243902,0,0,No,Private,Urban,0.337087,0.28791,'never smoked',0
+0.524294,Female,0.95122,0,1,Yes,Self-employed,Rural,0.327151,0.351434,Unknown,0
+0.724404,Male,0.158537,0,0,No,children,Urban,0.216604,0.173156,'never smoked',0
+0.276309,Female,0.5,0,0,Yes,Private,Rural,0.303525,0.343238,Unknown,0
+0.278064,Male,0.022927,0,0,No,children,Rural,0.286708,0.223361,Unknown,0
+0.564601,Female,0.426829,1,0,Yes,Private,Urban,0.346655,0.352459,smokes,0
+0.61918,Female,0.573171,0,0,Yes,Private,Urban,0.365644,0.243852,smokes,0
+0.858267,Female,0.597561,0,0,Yes,Private,Urban,0.224148,0.306352,'never smoked',1
+0.493874,Female,0.599028,0,0,Yes,Private,Rural,0.823092,0.498339,'never smoked',1
+0.812065,Female,0.634146,0,0,Yes,Self-employed,Urban,0.32969,0.281762,Unknown,0
+0.515794,Female,0.003902,0,0,No,children,Urban,0.399757,0.20082,Unknown,0
+0.64856,Male,0.707317,0,0,No,Private,Rural,0.340841,0.327869,Unknown,1
+0.51594,Male,0.465517,0,0,Yes,Private,Rural,0.29227,0.304836,Unknown,1
+0.547189,Female,0.390244,0,0,Yes,Private,Rural,0.280158,0.306352,smokes,1
+0.642364,Female,0.109756,0,0,No,children,Urban,0.304114,0.148566,Unknown,0
+0.029584,Female,0.872872,0,0,Yes,Self-employed,Urban,0.311037,0.299099,'never smoked',1
+0.916672,Female,0.650387,0,0,Yes,Govt_job,Rural,0.375912,0.273765,'formerly smoked',1
+0.5398,Female,1,1,0,Yes,Self-employed,Urban,0.724663,0.227459,'never smoked',1
+0.830847,Female,0.597561,0,0,Yes,Govt_job,Urban,0.252742,0.295082,'never smoked',0
+0.227447,Male,0.865854,0,1,Yes,Private,Urban,0.300876,0.345287,smokes,1
+0.627242,Male,0.890244,1,0,Yes,Self-employed,Rural,0.745455,0.383197,'never smoked',0
+0.775528,Male,0.170732,0,0,No,children,Urban,0.223375,0.190574,Unknown,0
+0.471188,Male,0.840881,0,0,Yes,Private,Rural,0.377901,0.261599,Unknown,1
+0.293131,Female,0.634146,0,0,Yes,Private,Urban,0.394826,0.28791,'never smoked',0
+0.648053,Male,0.902439,0,0,Yes,Private,Rural,0.808567,0.345287,'formerly smoked',1
+0.861215,Male,0.731707,0,0,Yes,Private,Urban,0.475307,0.344262,smokes,0
+0.856032,Female,0.621951,0,0,Yes,Govt_job,Rural,0.380621,0.279713,'formerly smoked',1
+0.293035,Female,0.487805,0,0,Yes,Private,Urban,0.274711,0.259221,'formerly smoked',0
+0.279504,Female,0.829268,1,0,Yes,Self-employed,Rural,0.758409,0.273566,'never smoked',1
+0.928763,Female,0.280488,0,0,No,Private,Urban,0.274012,0.364754,'formerly smoked',0
+0.776926,Male,0.987805,0,0,Yes,Private,Urban,0.685251,0.297131,'formerly smoked',1
+0.844735,Female,0.652127,1,0,Yes,Self-employed,Rural,0.599735,0.299676,'never smoked',1
+0.511749,Female,0.865854,0,0,Yes,Private,Urban,0.790351,0.345287,Unknown,0
+0.868344,Female,0.512195,0,0,Yes,Private,Rural,0.257562,0.471311,smokes,0
+0.94006,Female,0.878049,0,0,Yes,Self-employed,Rural,0.21079,0.244877,'never smoked',0
+0.376338,Female,0.721751,0,0,Yes,Private,Rural,0.297308,0.367649,Unknown,1
+0.474527,Male,0.670732,0,0,Yes,Govt_job,Rural,0.239641,0.307377,'never smoked',0
+0.748108,Female,0.560976,0,0,Yes,Private,Urban,0.287701,0.315574,'never smoked',1
+0.927177,Male,0.774799,0,0,Yes,Private,Urban,0.482546,0.30418,'formerly smoked',1
+0.024925,Female,0.365854,0,0,No,Govt_job,Urban,0.324575,0.345287,smokes,0
+0.070071,Female,0.658537,1,0,Yes,Govt_job,Urban,0.66582,0.283811,'never smoked',1
+0.747546,Male,0.926829,1,0,Yes,Self-employed,Rural,0.727092,0.356557,'formerly smoked',0
+0.955968,Female,0.946363,0,0,Yes,Govt_job,Rural,0.721056,0.232906,smokes,1
+0.489129,Female,0.431413,0,0,Yes,Private,Urban,0.293046,0.305608,'never smoked',1
+0.449219,Male,0.621951,0,0,No,Private,Rural,0.391588,0.429303,smokes,0
+0.445613,Female,0.97561,0,0,Yes,Self-employed,Urban,0.281777,0.349385,'never smoked',1
+0.80493,Female,0.813805,0,1,Yes,Private,Rural,0.868123,0.270011,'never smoked',1
+0.143077,Female,0.353659,0,0,Yes,Private,Rural,0.375616,0.32582,'never smoked',0
+0.615204,Female,0.987805,0,0,Yes,Self-employed,Urban,0.460735,0.409836,'never smoked',0
+0.327571,Male,0.292683,0,0,Yes,Private,Urban,0.380695,0.257172,smokes,0
+0.356211,Male,0.292683,0,0,No,Private,Rural,0.335652,0.28791,'formerly smoked',0
+0.738717,Male,0.902439,1,1,Yes,Private,Rural,0.25793,0.280738,'never smoked',1
+0.810598,Female,0.646341,0,0,Yes,Govt_job,Urban,0.236145,0.425205,'never smoked',1
+0.245202,Male,0.695122,0,0,No,Govt_job,Rural,0.33234,0.390369,smokes,0
+0.916959,Female,0.512195,0,0,Yes,Self-employed,Urban,0.515493,0.440574,'never smoked',0
+0.789992,Female,0.365854,0,0,Yes,Govt_job,Rural,0.406823,0.316598,smokes,0
+0.384247,Female,0.512195,0,0,Yes,Govt_job,Urban,0.308015,0.211066,'never smoked',0
+0.487771,Male,0.95122,0,0,No,Self-employed,Urban,0.331898,0.275615,'never smoked',1
+0.227954,Male,0.658537,0,0,Yes,Self-employed,Rural,0.406197,0.282787,'formerly smoked',0
+0.562202,Female,0.47561,0,0,Yes,Private,Urban,0.223007,0.35041,'never smoked',0
+0.040019,Male,0.207317,0,0,No,Private,Rural,0.350592,0.177254,Unknown,0
+0.594516,Male,0.963415,1,0,Yes,Private,Rural,0.276073,0.345287,'never smoked',1
+0.466959,Male,0.865854,1,0,Yes,Self-employed,Rural,0.323103,0.345287,Unknown,1
+0.0636,Female,0.841463,0,0,Yes,Govt_job,Urban,0.30474,0.286885,'never smoked',1
+0.91138,Female,0.968032,0,0,Yes,Self-employed,Urban,0.777167,0.274144,'never smoked',1
+0.753947,Male,0.910783,0,0,Yes,Private,Urban,0.606513,0.33054,'formerly smoked',1
+0.078338,Female,0.597561,1,0,Yes,Govt_job,Rural,0.363951,0.36373,'never smoked',0
+0.666424,Female,0.987805,0,1,Yes,Private,Rural,0.454442,0.314549,smokes,0
+0.976314,Female,0.833094,1,0,No,Self-employed,Urban,0.24171,0.323459,'never smoked',1
+0.672566,Female,0.390244,0,0,No,Private,Rural,0.249945,0.233607,smokes,0
+0.263696,Female,0.341463,0,0,No,Private,Rural,0.31129,0.240779,Unknown,0
+0.958308,Male,0.847764,1,0,No,Private,Rural,0.694895,0.316625,'never smoked',1
+0.223869,Female,0.02439,0,0,No,children,Urban,0.389159,0.202869,Unknown,0
+0.513449,Female,0.573171,0,0,Yes,Govt_job,Rural,0.3995,0.279713,'formerly smoked',0
+0.489224,Male,0.841463,0,0,Yes,Private,Rural,0.34522,0.292008,Unknown,1
+0.320949,Female,0.878049,0,0,Yes,Private,Rural,0.360344,0.275615,smokes,1
+0.521621,Female,0.792683,0,0,Yes,Private,Rural,0.371605,0.288934,'formerly smoked',1
+0.387726,Male,0.766581,0,0,Yes,Self-employed,Rural,0.376589,0.378778,'formerly smoked',1
+0.063477,Female,0.731707,0,0,Yes,Private,Rural,0.244425,0.241803,'never smoked',0
+0.804856,Male,0.5864,0,0,Yes,Private,Rural,0.295323,0.304345,'never smoked',1
+0.141382,Female,0.985949,0,0,Yes,Self-employed,Rural,0.288681,0.202481,'never smoked',1
+0.692336,Female,0.390244,0,0,Yes,Private,Rural,0.264223,0.271516,'never smoked',0
+0.977228,Female,0.865854,0,0,Yes,Govt_job,Urban,0.969014,0.396516,'never smoked',1
+0.372265,Female,0.914634,0,0,Yes,Self-employed,Rural,0.289983,0.300205,'formerly smoked',1
+0.905827,Male,0.621951,1,0,Yes,Private,Urban,0.412747,0.435451,'formerly smoked',1
+0.762147,Male,0.609756,0,0,Yes,Private,Urban,0.443218,0.310451,'never smoked',0
+0.154648,Female,0.341463,0,0,Yes,Private,Urban,0.360823,0.253074,'never smoked',0
+0.371166,Female,0.769704,0,0,Yes,Self-employed,Urban,0.411499,0.349072,Unknown,1
+0.936413,Female,0.487805,0,0,Yes,Private,Urban,0.242033,0.319672,'never smoked',0
+0.375912,Female,0.719512,0,0,Yes,Private,Rural,0.280231,0.345287,Unknown,1
+0.928489,Female,0.792683,0,0,Yes,Private,Rural,0.25782,0.366803,Unknown,0
+0.51102,Female,0.95122,0,0,Yes,Self-employed,Rural,0.222775,0.319649,'formerly smoked',1
+0.818358,Female,0.682927,0,0,Yes,Govt_job,Urban,0.316737,0.332992,Unknown,0
+0.106541,Female,0.92909,1,0,Yes,Private,Urban,0.28883,0.203447,'never smoked',1
+0.382808,Male,0.390244,0,0,Yes,Private,Rural,0.375837,0.330943,'never smoked',0
+0.219756,Female,0.853659,0,0,Yes,Self-employed,Rural,0.356296,0.256148,'never smoked',0
+0.280546,Male,0.987805,1,1,Yes,Private,Urban,0.923272,0.28791,smokes,1
+0.537236,Female,0.695122,0,1,Yes,Private,Urban,0.797012,0.317623,Unknown,1
+0.652961,Male,0.097561,0,0,No,children,Urban,0.396298,0.207992,Unknown,0
+0.491212,Female,0.402439,0,0,Yes,Private,Urban,0.893648,0.160861,smokes,0
+0.37416,Male,0.774968,1,1,Yes,Private,Urban,0.396974,0.367847,smokes,1
+0.233247,Male,0.95122,1,0,No,Private,Urban,0.415875,0.245902,'never smoked',1
+0.268124,Female,0.54878,0,0,Yes,Private,Rural,0.344888,0.309426,'formerly smoked',1
+0.687113,Female,0.792683,0,1,Yes,Private,Rural,0.722602,0.353484,'formerly smoked',0
+0.03932,Female,0.658537,0,0,Yes,Govt_job,Rural,0.377604,0.331967,Unknown,0
+0.239814,Female,0.036585,0,0,No,children,Urban,0.372783,0.254098,Unknown,0
+0.948177,Male,0.719512,0,0,Yes,Private,Rural,0.779348,0.345287,'formerly smoked',1
+0.631834,Female,0.719512,0,0,Yes,Private,Urban,0.261574,0.28791,'never smoked',0
+0.98969,Male,0.402439,0,0,No,Private,Urban,0.395488,0.273566,'never smoked',0
+0.376055,Female,0.729466,0,0,No,Private,Urban,0.307839,0.368347,'never smoked',1
+0.516816,Female,0.95122,0,0,Yes,Self-employed,Rural,0.213613,0.332823,'formerly smoked',1
+0.787017,Male,0.646341,0,0,Yes,Self-employed,Urban,0.3804,0.275615,'formerly smoked',0
+0.97476,Female,0.621951,0,0,Yes,Self-employed,Urban,0.330242,0.290984,'never smoked',0
+0.956512,Female,0.016098,0,0,No,children,Urban,0.258961,0.345287,Unknown,1
+0.388909,Female,0.085366,0,0,No,children,Rural,0.255649,0.193648,Unknown,0
+0.605182,Male,0.304878,0,0,No,Private,Rural,0.349636,0.286885,'never smoked',0
+0.459981,Female,0.621951,1,0,Yes,Private,Urban,0.267241,0.3125,'never smoked',0
+0.766876,Female,0.716466,0,0,Yes,Private,Urban,0.390583,0.397264,'formerly smoked',1
+0.028544,Male,0.426829,0,0,Yes,Private,Rural,0.426584,0.345287,'formerly smoked',0
+0.830315,Female,0.603005,0,0,Yes,Govt_job,Rural,0.622267,0.351586,Unknown,1
+0.876858,Female,0.512195,0,0,Yes,Private,Urban,0.356922,0.356557,'formerly smoked',0
+0.811941,Male,0.585366,0,0,Yes,Private,Urban,0.250718,0.389344,'formerly smoked',0
+0.536126,Male,0.902439,0,0,Yes,Self-employed,Rural,0.224406,0.345287,'never smoked',1
+0.281684,Female,0.829268,0,0,Yes,Private,Urban,0.292853,0.227459,'never smoked',0
+0.107499,Female,0.609756,0,0,Yes,Private,Urban,0.337381,0.229508,'never smoked',0
+0.684508,Female,0.719512,0,0,Yes,Govt_job,Rural,0.412122,0.36373,'formerly smoked',0
+0.212956,Male,0.560976,0,0,No,Private,Urban,0.39593,0.268443,'formerly smoked',0
+0.972621,Female,0.97561,0,0,Yes,Private,Urban,0.270626,0.245902,Unknown,1
+0.887469,Female,0.353659,0,0,No,Private,Urban,0.221756,0.209016,'never smoked',0
+0.06227,Female,0.646341,0,0,Yes,Govt_job,Urban,0.308346,0.45082,Unknown,0
+0.33263,Female,0.378049,0,0,Yes,Private,Rural,0.260948,0.289959,'never smoked',0
+0.981574,Female,0.573171,0,0,Yes,Private,Urban,0.246854,0.228484,Unknown,0
+0.275967,Male,0.621951,0,0,Yes,Private,Rural,0.288106,0.315574,'never smoked',0
+0.339759,Male,0.439024,0,0,Yes,Private,Rural,0.308346,0.26127,smokes,0
+0.517083,Male,0.956791,1,0,Yes,Self-employed,Rural,0.23718,0.268127,'formerly smoked',1
+0.616849,Female,0.963415,1,0,No,Govt_job,Urban,0.360712,0.228484,'formerly smoked',1
+0.390513,Female,0.95122,0,0,Yes,Self-employed,Rural,0.402848,0.315574,'never smoked',1
+0.892583,Male,0.987805,0,0,Yes,Private,Urban,0.784647,0.267418,Unknown,1
+0.726679,Female,0.658537,0,0,Yes,Govt_job,Rural,0.839994,0.471311,'never smoked',0
+0.717864,Male,0.841463,1,1,Yes,Private,Urban,0.287444,0.355533,'formerly smoked',0
+0.788634,Female,0.317073,0,0,Yes,Private,Urban,0.428277,0.224385,'formerly smoked',0
+0.635593,Male,0.829268,0,1,Yes,Private,Urban,0.848514,0.386953,'formerly smoked',1
+0.380318,Female,0.788434,1,0,Yes,Govt_job,Rural,0.416124,0.372731,'formerly smoked',1
+0.765341,Male,0.926829,0,0,Yes,Private,Urban,0.515566,0.306352,'formerly smoked',1
+0.872882,Male,0.268293,0,0,No,Private,Rural,0.314897,0.247951,'formerly smoked',0
+0.922017,Female,0.963824,0,0,Yes,Private,Urban,0.270242,0.246422,Unknown,1
+0.818056,Female,0.341463,0,0,Yes,Private,Rural,0.214948,0.215164,Unknown,0
+0.66142,Female,0.463415,0,0,No,Private,Rural,0.285199,0.378074,smokes,0
+0.998574,Female,0.719512,0,0,Yes,Private,Urban,0.242806,0.318648,Unknown,0
+0.27997,Female,0.52439,0,0,Yes,Private,Rural,0.253698,0.27459,'never smoked',0
+0.191239,Female,0.536585,0,0,Yes,Govt_job,Urban,0.24678,0.36373,'never smoked',0
+0.313902,Female,0.658537,0,0,Yes,Private,Rural,0.402112,0.44877,'formerly smoked',0
+0.787209,Male,0.719512,0,0,Yes,Private,Rural,0.353868,0.451844,Unknown,1
+0.110296,Female,0.902439,1,0,Yes,Private,Urban,0.25863,0.223361,'never smoked',1
+0.897025,Female,0.804878,0,0,Yes,Govt_job,Rural,0.34349,0.283811,'never smoked',0
+0.396751,Male,0.780488,0,0,Yes,Self-employed,Rural,0.412085,0.345287,'formerly smoked',1
+0.26275,Male,0.402439,0,0,Yes,Private,Urban,0.305881,0.239754,Unknown,0
+0.057842,Male,0.865854,0,0,Yes,Private,Urban,0.37856,0.278689,'formerly smoked',1
+0.627982,Female,0.621951,0,0,Yes,Private,Urban,0.608339,0.345287,'never smoked',1
+0.060324,Female,0.439024,0,0,Yes,Private,Urban,0.252006,0.248975,'never smoked',0
+0.166013,Female,0.987805,1,0,Yes,Private,Rural,0.295981,0.304303,'never smoked',1
+0.994132,Female,0.585366,0,0,Yes,Self-employed,Urban,0.332597,0.389344,smokes,0
+0.91212,Female,0.463415,0,0,Yes,Private,Urban,0.597262,0.241803,'never smoked',0
+0.117631,Female,0.939024,0,0,Yes,Self-employed,Rural,0.331199,0.327869,'never smoked',1
+0.034713,Male,0.341463,0,0,No,Private,Rural,0.315706,0.273566,Unknown,0
+0.863587,Male,0.701666,0,0,Yes,Private,Rural,0.654288,0.314973,Unknown,1
+0.515917,Male,0.609756,0,0,Yes,Govt_job,Urban,0.328181,0.356557,smokes,0
+0.266507,Male,0.817073,0,1,Yes,Private,Rural,0.357842,0.345287,Unknown,0
+0.331272,Female,0.146341,0,0,No,children,Rural,0.427026,0.243852,Unknown,0
+0.219495,Male,0.573171,0,0,Yes,Private,Rural,0.335063,0.318648,'formerly smoked',0
+0.62184,Female,0.015122,0,0,No,children,Rural,0.419371,0.220287,Unknown,0
+0.166918,Female,0.658537,0,0,Yes,Private,Urban,0.384596,0.279713,smokes,1
+0.94841,Female,0.963415,0,0,Yes,Private,Rural,0.334033,0.230533,'never smoked',0
+0.339114,Female,0.256098,0,0,No,Private,Rural,0.29749,0.314549,Unknown,0
+0.112852,Female,0.939024,0,0,No,Private,Urban,0.31881,0.331613,Unknown,1
+0.354785,Male,0.670732,0,0,Yes,Self-employed,Rural,0.359461,0.482582,'formerly smoked',0
+0.185138,Female,0.121951,0,0,No,children,Urban,0.41341,0.185451,Unknown,0
+0.002139,Female,0.402439,0,0,Yes,Private,Rural,0.320049,0.432377,'never smoked',0
+0.342268,Female,0.304878,0,0,No,Govt_job,Rural,0.379591,0.215164,smokes,0
+0.999698,Female,0.646341,1,0,Yes,Private,Urban,0.230183,0.310451,Unknown,1
+0.585413,Female,0.634146,0,0,Yes,Private,Rural,0.73769,0.256148,Unknown,0
+0.807636,Female,0.170732,0,0,No,children,Rural,0.28737,0.270492,Unknown,0
+0.147963,Female,0.959111,1,0,Yes,Private,Rural,0.318981,0.30613,'never smoked',1
+0.10972,Female,0.939024,0,0,No,Private,Urban,0.299257,0.345287,Unknown,1
+0.730409,Female,0.597561,0,0,Yes,Private,Urban,0.248583,0.180328,'formerly smoked',0
+0.609903,Female,0.683096,0,0,Yes,Private,Rural,0.386573,0.355364,smokes,1
+0.824321,Female,0.963415,0,0,Yes,Private,Urban,0.251601,0.247951,smokes,0
+0.064203,Male,0.280488,0,0,No,Private,Urban,0.426805,0.228484,'never smoked',0
+0.144516,Male,0.634146,1,0,Yes,Private,Rural,0.370612,0.379098,'never smoked',0
+0.564203,Female,0.390244,0,0,Yes,Private,Urban,0.368036,0.381148,'never smoked',0
+0.324362,Female,0.060976,0,0,No,children,Urban,0.279164,0.204918,Unknown,0
+0.226981,Male,0.158537,0,0,No,Never_worked,Rural,0.410245,0.213115,Unknown,0
+0.048149,Female,0.853659,1,0,Yes,Self-employed,Urban,0.327997,0.35041,'formerly smoked',1
+0.351316,Female,0.54878,0,0,No,Private,Rural,0.382498,0.332992,smokes,0
+0.122004,Male,0.597561,0,0,No,Private,Rural,0.385884,0.326844,smokes,1
+0.867878,Male,0.341463,0,0,No,Private,Urban,0.277839,0.276639,smokes,0
+0.305511,Male,0.268293,0,0,No,Private,Rural,0.3811,0.257172,Unknown,0
+0.475994,Male,0.585366,1,0,No,Private,Urban,0.406749,0.35041,'never smoked',0
+0.405155,Female,0.670732,1,1,Yes,Private,Urban,0.77427,0.409836,smokes,1
+0.288826,Female,0.54878,0,0,Yes,Self-employed,Urban,0.405167,0.316598,'never smoked',0
+0.429204,Female,0.470852,0,0,Yes,Self-employed,Urban,0.363943,0.310548,smokes,1
+0.76042,Female,0.378049,0,0,Yes,Private,Rural,0.222308,0.318648,Unknown,0
+0.346627,Female,0.585366,0,0,Yes,Private,Urban,0.254692,0.339139,'never smoked',0
+0.78603,Female,0.707317,0,0,Yes,Govt_job,Rural,0.254361,0.289959,Unknown,0
+0.803825,Male,0.890244,1,0,Yes,Self-employed,Urban,0.717561,0.336066,'never smoked',1
+0.291171,Female,0.52439,0,0,Yes,Private,Urban,0.275484,0.275615,'never smoked',0
+0.569454,Female,0.402439,0,0,Yes,Govt_job,Rural,0.213145,0.228484,Unknown,0
+0.10388,Male,0.158537,0,0,No,children,Urban,0.279127,0.207992,Unknown,0
+0.208651,Female,0.329268,0,0,No,Private,Rural,0.287223,0.228484,'never smoked',0
+0.770208,Male,0.353659,0,0,No,Private,Urban,0.763892,0.233607,smokes,0
+0.599455,Male,0.650607,0,0,No,Private,Rural,0.356182,0.323938,Unknown,1
+0.032163,Male,0.707317,0,0,Yes,Private,Urban,0.302863,0.345287,smokes,1
+0.392787,Male,0.773061,1,1,Yes,Private,Urban,0.412542,0.35283,smokes,1
+0.909172,Female,0.695122,0,0,No,Self-employed,Urban,0.250313,0.384221,'never smoked',1
+0.821141,Female,0.707317,0,0,Yes,Govt_job,Rural,0.40318,0.23668,'never smoked',0
+0.724014,Male,0.918742,1,1,Yes,Private,Rural,0.257383,0.29589,'never smoked',1
+0.701522,Male,0.987805,0,0,Yes,Private,Urban,0.26794,0.269467,'never smoked',1
+0.18592,Female,0.792683,0,0,Yes,Private,Urban,0.326857,0.288934,'formerly smoked',0
+0.445764,Male,0.021951,0,0,No,children,Urban,0.253183,0.345287,Unknown,0
+0.298094,Male,0.04878,0,0,No,children,Urban,0.316037,0.181352,Unknown,0

@@ -20,16 +20,22 @@ public class KCrossVal {
         if (data.classAttribute().isNominal()){
             data.stratify(folds);
         }
+        Evaluation overallEval = new Evaluation(data);
         for (int i = 0; i < folds; i++){
             Evaluation eval = new Evaluation(data);
             Instances train = data.trainCV(folds, i);
             Instances test = data.testCV(folds, i);
             this.model.buildClassifier(train);
             eval.evaluateModel(model.classifier, test);
-            this.avg_f1 += eval.fMeasure(1);
+            overallEval.evaluateModel(model.classifier, test);
+            // this.avg_f1 += eval.fMeasure(1);
         }
-        this.avg_f1 = this.avg_f1/folds;
-        System.out.println("Average F1 score: " + avg_f1);
+        // this.avg_f1 = this.avg_f1/folds;
+        // System.out.println("Average F1 score: " + avg_f1);
+        System.out.println(overallEval.toSummaryString("10-fold cross validation evaluation results:\n", false));
+        System.out.println(overallEval.toClassDetailsString("=== Detailed Accuracy By Class ===\n"));
+        System.out.println(overallEval.toMatrixString("===Overall Confusion Matrix===\n"));
+
     }
 
     public void saveModel(String filePath) throws Exception {

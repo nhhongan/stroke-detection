@@ -17,7 +17,9 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils.DataSource;
-import weka.classifiers.trees.RandomTree;
+import weka.classifiers.functions.SimpleLogistic;
+import weka.classifiers.rules.OneR;
+import libsvm.svm_model;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.trees.J48;
 import weka.associations.Apriori;
@@ -120,23 +122,28 @@ public class Main {
         System.out.println("Number of instances for class 0: " + class0Count8);
         System.out.println("Number of instances for class 1: " + class1Count8);
 
+        trainDataset.randomize(random);
+
         // ArffSaver saver = new ArffSaver();
-        // saver.setInstances(balancedTrain);
+        // saver.setInstances(testDataset);
+        // String outputFilePath = "dataset/testing_dataset.arff";
         // saver.setFile(new File(outputFilePath));
         // saver.writeBatch();
         // System.out.println("Smote ARFF file saved: " + outputFilePath);
 
-        trainDataset.randomize(random);
-
         RandomForest randomForest = new RandomForest();
         NaiveBayes naiveBayes = new NaiveBayes();
         J48 j48 = new J48();
+        OneR oneR = new OneR();
+        SimpleLogistic logistic = new SimpleLogistic();
         Apriori apriori = new Apriori();
 
         ArrayList<Classifier> classifiers = new ArrayList<>();
         classifiers.add(randomForest);
         classifiers.add(naiveBayes);
         classifiers.add(j48);
+        classifiers.add(oneR);
+        classifiers.add(logistic);
 
         ArrayList<WekaModel> models = new ArrayList<>();
         for (Classifier classifier : classifiers) {
